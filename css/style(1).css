@@ -1,0 +1,4563 @@
+@charset "UTF-8";
+/*
+Theme Name: Infograph15
+Template: spark_15
+*/
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Metrics for Infogra.ph */
+/* infogra.ph Color Palette */
+/* Images for infograph */
+/* Rights For Girls Typography Variables and Mixins */
+/* Mixins for infographic */
+/**
+* Gumby Framework
+* ---------------
+*
+* Follow @gumbycss on twitter and spread the love.
+* We worked super hard on making this awesome and released it to the web.
+* All we ask is you leave this intact. #gumbyisawesome
+*
+* Gumby Framework
+* http://gumbyframework.com
+*
+* Built with love by your friends @digitalsurgeons
+* http://www.digitalsurgeons.com
+*
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+/* line 145, style/gumby/sass/functions/_semantic-grid.scss */
+.container, #infograph_application #article {
+  *zoom: 1;
+}
+/* line 3, style/gumby/sass/functions/_clearfix.scss */
+.container:before, #infograph_application #article:before, .container:after, #infograph_application #article:after {
+  content: "";
+  display: table;
+}
+/* line 7, style/gumby/sass/functions/_clearfix.scss */
+.container:after, #infograph_application #article:after {
+  clear: both;
+}
+
+/* line 155, style/gumby/sass/functions/_semantic-grid.scss */
+.container .thirds, .container .quarter, #infograph_application #article .post-content, #infograph_application #article #recommended-articles {
+  margin-left: 1.81818%;
+  float: left;
+  min-height: 1px;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 163, style/gumby/sass/functions/_semantic-grid.scss */
+.pull_right {
+  float: right;
+}
+
+/* line 164, style/gumby/sass/functions/_semantic-grid.scss */
+.pull_left {
+  float: left;
+}
+
+/* Base Styles */
+/* line 106, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 6, style/gumby/sass/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, style/gumby/sass/_base.scss */
+body {
+  background: #fff;
+  font-family: "Helvetica";
+  font-weight: 400;
+  color: #555555;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 767px) {
+  /* line 8, style/gumby/sass/_base.scss */
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* line 24, style/gumby/sass/_base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 28, style/gumby/sass/_base.scss */
+.hide {
+  display: none;
+}
+
+/* line 32, style/gumby/sass/_base.scss */
+.hide.active, .show {
+  display: block;
+}
+
+/* line 2, style/gumby/sass/functions/_fixed.scss */
+.fixed {
+  position: fixed;
+}
+/* line 4, style/gumby/sass/functions/_fixed.scss */
+.fixed.pinned {
+  position: absolute;
+}
+@media only screen and (max-width: 768px) {
+  /* line 2, style/gumby/sass/functions/_fixed.scss */
+  .fixed {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+  }
+}
+
+/* line 16, style/gumby/sass/functions/_fixed.scss */
+.unfixed {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+/* line 47, style/gumby/sass/_base.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 48, style/gumby/sass/_base.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 49, style/gumby/sass/_base.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 1, style/gumby/sass/_grid.scss */
+.row .pull_one.one.column:first-child, .row .pull_one.two.columns:first-child, .row .pull_one.three.columns:first-child, .row .pull_one.four.columns:first-child, .row .pull_one.five.columns:first-child, .row .pull_one.six.columns:first-child, .row .pull_one.seven.columns:first-child, .row .pull_one.eight.columns:first-child, .row .pull_two.one.column:first-child, .row .pull_two.two.columns:first-child, .row .pull_two.three.columns:first-child, .row .pull_two.four.columns:first-child, .row .pull_two.five.columns:first-child, .row .pull_two.six.columns:first-child, .row .pull_two.seven.columns:first-child, .row .pull_two.nine.columns:first-child, .row .pull_three.one.column:first-child, .row .pull_three.two.columns:first-child, .row .pull_three.three.columns:first-child, .row .pull_three.four.columns:first-child, .row .pull_three.five.columns:first-child, .row .pull_three.six.columns:first-child, .row .pull_three.eight.columns:first-child, .row .pull_three.nine.columns:first-child, .row .pull_four.one.column:first-child, .row .pull_four.two.columns:first-child, .row .pull_four.three.columns:first-child, .row .pull_four.four.columns:first-child, .row .pull_four.five.columns:first-child, .row .pull_four.seven.columns:first-child, .row .pull_four.eight.columns:first-child, .row .pull_four.nine.columns:first-child, .row .pull_five.one.column:first-child, .row .pull_five.two.columns:first-child, .row .pull_five.three.columns:first-child, .row .pull_five.four.columns:first-child, .row .pull_five.six.columns:first-child, .row .pull_five.seven.columns:first-child, .row .pull_five.eight.columns:first-child, .row .pull_five.nine.columns:first-child, .row .pull_six.one.column:first-child, .row .pull_six.two.columns:first-child, .row .pull_six.three.columns:first-child, .row .pull_six.five.columns:first-child, .row .pull_six.six.columns:first-child, .row .pull_six.seven.columns:first-child, .row .pull_six.eight.columns:first-child, .row .pull_six.nine.columns:first-child, .row .pull_seven.one.column:first-child, .row .pull_seven.two.columns:first-child, .row .pull_seven.four.columns:first-child, .row .pull_seven.five.columns:first-child, .row .pull_seven.six.columns:first-child, .row .pull_seven.seven.columns:first-child, .row .pull_seven.eight.columns:first-child, .row .pull_seven.nine.columns:first-child, .row .pull_eight.one.column:first-child, .row .pull_eight.three.columns:first-child, .row .pull_eight.four.columns:first-child, .row .pull_eight.five.columns:first-child, .row .pull_eight.six.columns:first-child, .row .pull_eight.seven.columns:first-child, .row .pull_eight.eight.columns:first-child, .row .pull_eight.nine.columns:first-child, .row .pull_nine.two.columns:first-child, .row .pull_nine.three.columns:first-child, .row .pull_nine.four.columns:first-child, .row .pull_nine.five.columns:first-child, .row .pull_nine.six.columns:first-child, .row .pull_nine.seven.columns:first-child, .row .pull_nine.eight.columns:first-child, .row .pull_nine.nine.columns:first-child, .sixteen.colgrid .row .pull_one.one.column:first-child, .sixteen.colgrid .row .pull_one.two.columns:first-child, .sixteen.colgrid .row .pull_one.three.columns:first-child, .sixteen.colgrid .row .pull_one.four.columns:first-child, .sixteen.colgrid .row .pull_one.five.columns:first-child, .sixteen.colgrid .row .pull_one.six.columns:first-child, .sixteen.colgrid .row .pull_one.seven.columns:first-child, .sixteen.colgrid .row .pull_one.eight.columns:first-child, .sixteen.colgrid .row .pull_one.nine.columns:first-child, .sixteen.colgrid .row .pull_one.ten.columns:first-child, .sixteen.colgrid .row .pull_one.eleven.columns:first-child, .sixteen.colgrid .row .pull_one.twelve.columns:first-child, .sixteen.colgrid .row .pull_one.thirteen.columns:first-child, .sixteen.colgrid .row .pull_one.fourteen.columns:first-child, .sixteen.colgrid .row .pull_two.one.column:first-child, .sixteen.colgrid .row .pull_two.two.columns:first-child, .sixteen.colgrid .row .pull_two.three.columns:first-child, .sixteen.colgrid .row .pull_two.four.columns:first-child, .sixteen.colgrid .row .pull_two.five.columns:first-child, .sixteen.colgrid .row .pull_two.six.columns:first-child, .sixteen.colgrid .row .pull_two.seven.columns:first-child, .sixteen.colgrid .row .pull_two.eight.columns:first-child, .sixteen.colgrid .row .pull_two.nine.columns:first-child, .sixteen.colgrid .row .pull_two.ten.columns:first-child, .sixteen.colgrid .row .pull_two.eleven.columns:first-child, .sixteen.colgrid .row .pull_two.twelve.columns:first-child, .sixteen.colgrid .row .pull_two.thirteen.columns:first-child, .sixteen.colgrid .row .pull_two.fifteen.columns:first-child, .sixteen.colgrid .row .pull_three.one.column:first-child, .sixteen.colgrid .row .pull_three.two.columns:first-child, .sixteen.colgrid .row .pull_three.three.columns:first-child, .sixteen.colgrid .row .pull_three.four.columns:first-child, .sixteen.colgrid .row .pull_three.five.columns:first-child, .sixteen.colgrid .row .pull_three.six.columns:first-child, .sixteen.colgrid .row .pull_three.seven.columns:first-child, .sixteen.colgrid .row .pull_three.eight.columns:first-child, .sixteen.colgrid .row .pull_three.nine.columns:first-child, .sixteen.colgrid .row .pull_three.ten.columns:first-child, .sixteen.colgrid .row .pull_three.eleven.columns:first-child, .sixteen.colgrid .row .pull_three.twelve.columns:first-child, .sixteen.colgrid .row .pull_three.fourteen.columns:first-child, .sixteen.colgrid .row .pull_three.fifteen.columns:first-child, .sixteen.colgrid .row .pull_four.one.column:first-child, .sixteen.colgrid .row .pull_four.two.columns:first-child, .sixteen.colgrid .row .pull_four.three.columns:first-child, .sixteen.colgrid .row .pull_four.four.columns:first-child, .sixteen.colgrid .row .pull_four.five.columns:first-child, .sixteen.colgrid .row .pull_four.six.columns:first-child, .sixteen.colgrid .row .pull_four.seven.columns:first-child, .sixteen.colgrid .row .pull_four.eight.columns:first-child, .sixteen.colgrid .row .pull_four.nine.columns:first-child, .sixteen.colgrid .row .pull_four.ten.columns:first-child, .sixteen.colgrid .row .pull_four.eleven.columns:first-child, .sixteen.colgrid .row .pull_four.thirteen.columns:first-child, .sixteen.colgrid .row .pull_four.fourteen.columns:first-child, .sixteen.colgrid .row .pull_four.fifteen.columns:first-child, .sixteen.colgrid .row .pull_five.one.column:first-child, .sixteen.colgrid .row .pull_five.two.columns:first-child, .sixteen.colgrid .row .pull_five.three.columns:first-child, .sixteen.colgrid .row .pull_five.four.columns:first-child, .sixteen.colgrid .row .pull_five.five.columns:first-child, .sixteen.colgrid .row .pull_five.six.columns:first-child, .sixteen.colgrid .row .pull_five.seven.columns:first-child, .sixteen.colgrid .row .pull_five.eight.columns:first-child, .sixteen.colgrid .row .pull_five.nine.columns:first-child, .sixteen.colgrid .row .pull_five.ten.columns:first-child, .sixteen.colgrid .row .pull_five.twelve.columns:first-child, .sixteen.colgrid .row .pull_five.thirteen.columns:first-child, .sixteen.colgrid .row .pull_five.fourteen.columns:first-child, .sixteen.colgrid .row .pull_five.fifteen.columns:first-child, .sixteen.colgrid .row .pull_six.one.column:first-child, .sixteen.colgrid .row .pull_six.two.columns:first-child, .sixteen.colgrid .row .pull_six.three.columns:first-child, .sixteen.colgrid .row .pull_six.four.columns:first-child, .sixteen.colgrid .row .pull_six.five.columns:first-child, .sixteen.colgrid .row .pull_six.six.columns:first-child, .sixteen.colgrid .row .pull_six.seven.columns:first-child, .sixteen.colgrid .row .pull_six.eight.columns:first-child, .sixteen.colgrid .row .pull_six.nine.columns:first-child, .sixteen.colgrid .row .pull_six.eleven.columns:first-child, .sixteen.colgrid .row .pull_six.twelve.columns:first-child, .sixteen.colgrid .row .pull_six.thirteen.columns:first-child, .sixteen.colgrid .row .pull_six.fourteen.columns:first-child, .sixteen.colgrid .row .pull_six.fifteen.columns:first-child, .sixteen.colgrid .row .pull_seven.one.column:first-child, .sixteen.colgrid .row .pull_seven.two.columns:first-child, .sixteen.colgrid .row .pull_seven.three.columns:first-child, .sixteen.colgrid .row .pull_seven.four.columns:first-child, .sixteen.colgrid .row .pull_seven.five.columns:first-child, .sixteen.colgrid .row .pull_seven.six.columns:first-child, .sixteen.colgrid .row .pull_seven.seven.columns:first-child, .sixteen.colgrid .row .pull_seven.eight.columns:first-child, .sixteen.colgrid .row .pull_seven.ten.columns:first-child, .sixteen.colgrid .row .pull_seven.eleven.columns:first-child, .sixteen.colgrid .row .pull_seven.twelve.columns:first-child, .sixteen.colgrid .row .pull_seven.thirteen.columns:first-child, .sixteen.colgrid .row .pull_seven.fourteen.columns:first-child, .sixteen.colgrid .row .pull_seven.fifteen.columns:first-child, .sixteen.colgrid .row .pull_eight.one.column:first-child, .sixteen.colgrid .row .pull_eight.two.columns:first-child, .sixteen.colgrid .row .pull_eight.three.columns:first-child, .sixteen.colgrid .row .pull_eight.four.columns:first-child, .sixteen.colgrid .row .pull_eight.five.columns:first-child, .sixteen.colgrid .row .pull_eight.six.columns:first-child, .sixteen.colgrid .row .pull_eight.seven.columns:first-child, .sixteen.colgrid .row .pull_eight.nine.columns:first-child, .sixteen.colgrid .row .pull_eight.ten.columns:first-child, .sixteen.colgrid .row .pull_eight.eleven.columns:first-child, .sixteen.colgrid .row .pull_eight.twelve.columns:first-child, .sixteen.colgrid .row .pull_eight.thirteen.columns:first-child, .sixteen.colgrid .row .pull_eight.fourteen.columns:first-child, .sixteen.colgrid .row .pull_eight.fifteen.columns:first-child, .sixteen.colgrid .row .pull_nine.one.column:first-child, .sixteen.colgrid .row .pull_nine.two.columns:first-child, .sixteen.colgrid .row .pull_nine.three.columns:first-child, .sixteen.colgrid .row .pull_nine.four.columns:first-child, .sixteen.colgrid .row .pull_nine.five.columns:first-child, .sixteen.colgrid .row .pull_nine.six.columns:first-child, .sixteen.colgrid .row .pull_nine.eight.columns:first-child, .sixteen.colgrid .row .pull_nine.nine.columns:first-child, .sixteen.colgrid .row .pull_nine.ten.columns:first-child, .sixteen.colgrid .row .pull_nine.eleven.columns:first-child, .sixteen.colgrid .row .pull_nine.twelve.columns:first-child, .sixteen.colgrid .row .pull_nine.thirteen.columns:first-child, .sixteen.colgrid .row .pull_nine.fourteen.columns:first-child, .sixteen.colgrid .row .pull_nine.fifteen.columns:first-child, .sixteen.colgrid .row .pull_ten.one.column:first-child, .sixteen.colgrid .row .pull_ten.two.columns:first-child, .sixteen.colgrid .row .pull_ten.three.columns:first-child, .sixteen.colgrid .row .pull_ten.four.columns:first-child, .sixteen.colgrid .row .pull_ten.five.columns:first-child, .sixteen.colgrid .row .pull_ten.seven.columns:first-child, .sixteen.colgrid .row .pull_ten.eight.columns:first-child, .sixteen.colgrid .row .pull_ten.nine.columns:first-child, .sixteen.colgrid .row .pull_ten.ten.columns:first-child, .sixteen.colgrid .row .pull_ten.eleven.columns:first-child, .sixteen.colgrid .row .pull_ten.twelve.columns:first-child, .sixteen.colgrid .row .pull_ten.thirteen.columns:first-child, .sixteen.colgrid .row .pull_ten.fourteen.columns:first-child, .sixteen.colgrid .row .pull_ten.fifteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.one.column:first-child, .sixteen.colgrid .row .pull_eleven.two.columns:first-child, .sixteen.colgrid .row .pull_eleven.three.columns:first-child, .sixteen.colgrid .row .pull_eleven.four.columns:first-child, .sixteen.colgrid .row .pull_eleven.six.columns:first-child, .sixteen.colgrid .row .pull_eleven.seven.columns:first-child, .sixteen.colgrid .row .pull_eleven.eight.columns:first-child, .sixteen.colgrid .row .pull_eleven.nine.columns:first-child, .sixteen.colgrid .row .pull_eleven.ten.columns:first-child, .sixteen.colgrid .row .pull_eleven.eleven.columns:first-child, .sixteen.colgrid .row .pull_eleven.twelve.columns:first-child, .sixteen.colgrid .row .pull_eleven.thirteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.fourteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.fifteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.one.column:first-child, .sixteen.colgrid .row .pull_twelve.two.columns:first-child, .sixteen.colgrid .row .pull_twelve.three.columns:first-child, .sixteen.colgrid .row .pull_twelve.five.columns:first-child, .sixteen.colgrid .row .pull_twelve.six.columns:first-child, .sixteen.colgrid .row .pull_twelve.seven.columns:first-child, .sixteen.colgrid .row .pull_twelve.eight.columns:first-child, .sixteen.colgrid .row .pull_twelve.nine.columns:first-child, .sixteen.colgrid .row .pull_twelve.ten.columns:first-child, .sixteen.colgrid .row .pull_twelve.eleven.columns:first-child, .sixteen.colgrid .row .pull_twelve.twelve.columns:first-child, .sixteen.colgrid .row .pull_twelve.thirteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.fourteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.fifteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.one.column:first-child, .sixteen.colgrid .row .pull_thirteen.two.columns:first-child, .sixteen.colgrid .row .pull_thirteen.four.columns:first-child, .sixteen.colgrid .row .pull_thirteen.five.columns:first-child, .sixteen.colgrid .row .pull_thirteen.six.columns:first-child, .sixteen.colgrid .row .pull_thirteen.seven.columns:first-child, .sixteen.colgrid .row .pull_thirteen.eight.columns:first-child, .sixteen.colgrid .row .pull_thirteen.nine.columns:first-child, .sixteen.colgrid .row .pull_thirteen.ten.columns:first-child, .sixteen.colgrid .row .pull_thirteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_thirteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_thirteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.fifteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.one.column:first-child, .sixteen.colgrid .row .pull_fourteen.three.columns:first-child, .sixteen.colgrid .row .pull_fourteen.four.columns:first-child, .sixteen.colgrid .row .pull_fourteen.five.columns:first-child, .sixteen.colgrid .row .pull_fourteen.six.columns:first-child, .sixteen.colgrid .row .pull_fourteen.seven.columns:first-child, .sixteen.colgrid .row .pull_fourteen.eight.columns:first-child, .sixteen.colgrid .row .pull_fourteen.nine.columns:first-child, .sixteen.colgrid .row .pull_fourteen.ten.columns:first-child, .sixteen.colgrid .row .pull_fourteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_fourteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_fourteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.fifteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.two.columns:first-child, .sixteen.colgrid .row .pull_fifteen.three.columns:first-child, .sixteen.colgrid .row .pull_fifteen.four.columns:first-child, .sixteen.colgrid .row .pull_fifteen.five.columns:first-child, .sixteen.colgrid .row .pull_fifteen.six.columns:first-child, .sixteen.colgrid .row .pull_fifteen.seven.columns:first-child, .sixteen.colgrid .row .pull_fifteen.eight.columns:first-child, .sixteen.colgrid .row .pull_fifteen.nine.columns:first-child, .sixteen.colgrid .row .pull_fifteen.ten.columns:first-child, .sixteen.colgrid .row .pull_fifteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_fifteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_fifteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.fifteen.columns:first-child {
+  margin-left: 0;
+}
+
+/*=================================================
+
+	+++ LE GRID +++
+	A Responsive Grid -- Gumby defaults to a standard 960 grid,
+	but you can change it to whatever you'd like.
+
+ ==================================================*/
+/*.container {
+	padding: 0 $gutter-in-px;
+}*/
+/* line 22, style/gumby/sass/_grid.scss */
+.row {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 29, style/gumby/sass/_grid.scss */
+.row .row {
+  min-width: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* To fix the grid into a different size, set max-width to your desired width */
+/* line 38, style/gumby/sass/_grid.scss */
+.column, .columns {
+  margin-left: 1.81818%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 45, style/gumby/sass/_grid.scss */
+.column:first-child, .columns:first-child, .alpha {
+  margin-left: 0;
+}
+
+/* line 49, style/gumby/sass/_grid.scss */
+.column.omega, .columns.omega {
+  float: right;
+}
+
+/* Column Classes */
+/* line 61, style/gumby/sass/_grid.scss */
+.row .one.column {
+  width: 8.36364%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .one.columns {
+  width: 8.36364%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .two.columns {
+  width: 18.54545%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .three.columns {
+  width: 28.72727%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .four.columns {
+  width: 38.90909%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .five.columns {
+  width: 49.09091%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .six.columns {
+  width: 59.27273%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .seven.columns {
+  width: 69.45455%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .eight.columns {
+  width: 79.63636%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .nine.columns {
+  width: 89.81818%;
+}
+/* line 65, style/gumby/sass/_grid.scss */
+.row .ten.columns {
+  width: 100.0%;
+}
+
+/* Push and Pull Classes */
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_one {
+  margin-left: 12%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_one:first-child {
+  margin-left: 10.18182%;
+}
+/* line 91, style/gumby/sass/_grid.scss */
+.row .pull_one.one.column {
+  margin-left: -18.54545%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_one.two.columns {
+  margin-left: -28.72727%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_one.three.columns {
+  margin-left: -38.90909%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_one.four.columns {
+  margin-left: -49.09091%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_one.five.columns {
+  margin-left: -59.27273%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_one.six.columns {
+  margin-left: -69.45455%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_one.seven.columns {
+  margin-left: -79.63636%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_one.eight.columns {
+  margin-left: -89.81818%;
+}
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_two {
+  margin-left: 22.18182%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_two:first-child {
+  margin-left: 20.36364%;
+}
+/* line 91, style/gumby/sass/_grid.scss */
+.row .pull_two.one.column {
+  margin-left: -28.72727%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_two.two.columns {
+  margin-left: -38.90909%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_two.three.columns {
+  margin-left: -49.09091%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_two.four.columns {
+  margin-left: -59.27273%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_two.five.columns {
+  margin-left: -69.45455%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_two.six.columns {
+  margin-left: -79.63636%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_two.seven.columns {
+  margin-left: -89.81818%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_two.nine.columns {
+  margin-left: -110.18182%;
+}
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_three {
+  margin-left: 32.36364%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_three:first-child {
+  margin-left: 30.54545%;
+}
+/* line 91, style/gumby/sass/_grid.scss */
+.row .pull_three.one.column {
+  margin-left: -38.90909%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_three.two.columns {
+  margin-left: -49.09091%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_three.three.columns {
+  margin-left: -59.27273%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_three.four.columns {
+  margin-left: -69.45455%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_three.five.columns {
+  margin-left: -79.63636%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_three.six.columns {
+  margin-left: -89.81818%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_three.eight.columns {
+  margin-left: -110.18182%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_three.nine.columns {
+  margin-left: -120.36364%;
+}
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_four {
+  margin-left: 42.54545%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_four:first-child {
+  margin-left: 40.72727%;
+}
+/* line 91, style/gumby/sass/_grid.scss */
+.row .pull_four.one.column {
+  margin-left: -49.09091%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_four.two.columns {
+  margin-left: -59.27273%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_four.three.columns {
+  margin-left: -69.45455%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_four.four.columns {
+  margin-left: -79.63636%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_four.five.columns {
+  margin-left: -89.81818%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_four.seven.columns {
+  margin-left: -110.18182%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_four.eight.columns {
+  margin-left: -120.36364%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_four.nine.columns {
+  margin-left: -130.54545%;
+}
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_five {
+  margin-left: 52.72727%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_five:first-child {
+  margin-left: 50.90909%;
+}
+/* line 91, style/gumby/sass/_grid.scss */
+.row .pull_five.one.column {
+  margin-left: -59.27273%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_five.two.columns {
+  margin-left: -69.45455%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_five.three.columns {
+  margin-left: -79.63636%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_five.four.columns {
+  margin-left: -89.81818%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_five.six.columns {
+  margin-left: -110.18182%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_five.seven.columns {
+  margin-left: -120.36364%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_five.eight.columns {
+  margin-left: -130.54545%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_five.nine.columns {
+  margin-left: -140.72727%;
+}
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_six {
+  margin-left: 62.90909%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_six:first-child {
+  margin-left: 61.09091%;
+}
+/* line 91, style/gumby/sass/_grid.scss */
+.row .pull_six.one.column {
+  margin-left: -69.45455%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_six.two.columns {
+  margin-left: -79.63636%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_six.three.columns {
+  margin-left: -89.81818%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_six.five.columns {
+  margin-left: -110.18182%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_six.six.columns {
+  margin-left: -120.36364%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_six.seven.columns {
+  margin-left: -130.54545%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_six.eight.columns {
+  margin-left: -140.72727%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_six.nine.columns {
+  margin-left: -150.90909%;
+}
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_seven {
+  margin-left: 73.09091%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_seven:first-child {
+  margin-left: 71.27273%;
+}
+/* line 91, style/gumby/sass/_grid.scss */
+.row .pull_seven.one.column {
+  margin-left: -79.63636%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_seven.two.columns {
+  margin-left: -89.81818%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_seven.four.columns {
+  margin-left: -110.18182%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_seven.five.columns {
+  margin-left: -120.36364%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_seven.six.columns {
+  margin-left: -130.54545%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_seven.seven.columns {
+  margin-left: -140.72727%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_seven.eight.columns {
+  margin-left: -150.90909%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_seven.nine.columns {
+  margin-left: -161.09091%;
+}
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_eight {
+  margin-left: 83.27273%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_eight:first-child {
+  margin-left: 81.45455%;
+}
+/* line 91, style/gumby/sass/_grid.scss */
+.row .pull_eight.one.column {
+  margin-left: -89.81818%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_eight.three.columns {
+  margin-left: -110.18182%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_eight.four.columns {
+  margin-left: -120.36364%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_eight.five.columns {
+  margin-left: -130.54545%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_eight.six.columns {
+  margin-left: -140.72727%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_eight.seven.columns {
+  margin-left: -150.90909%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_eight.eight.columns {
+  margin-left: -161.09091%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_eight.nine.columns {
+  margin-left: -171.27273%;
+}
+/* line 76, style/gumby/sass/_grid.scss */
+.row .push_nine {
+  margin-left: 93.45455%;
+}
+/* line 78, style/gumby/sass/_grid.scss */
+.row .push_nine:first-child {
+  margin-left: 91.63636%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_nine.two.columns {
+  margin-left: -110.18182%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_nine.three.columns {
+  margin-left: -120.36364%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_nine.four.columns {
+  margin-left: -130.54545%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_nine.five.columns {
+  margin-left: -140.72727%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_nine.six.columns {
+  margin-left: -150.90909%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_nine.seven.columns {
+  margin-left: -161.09091%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_nine.eight.columns {
+  margin-left: -171.27273%;
+}
+/* line 99, style/gumby/sass/_grid.scss */
+.row .pull_nine.nine.columns {
+  margin-left: -181.45455%;
+}
+
+/* Centered Classes */
+/* line 116, style/gumby/sass/_grid.scss */
+.row .one.centered {
+  margin-left: 45.81818%;
+}
+/* line 116, style/gumby/sass/_grid.scss */
+.row .two.centered {
+  margin-left: 40.72727%;
+}
+/* line 116, style/gumby/sass/_grid.scss */
+.row .three.centered {
+  margin-left: 35.63636%;
+}
+/* line 116, style/gumby/sass/_grid.scss */
+.row .four.centered {
+  margin-left: 30.54545%;
+}
+/* line 116, style/gumby/sass/_grid.scss */
+.row .five.centered {
+  margin-left: 25.45455%;
+}
+/* line 116, style/gumby/sass/_grid.scss */
+.row .six.centered {
+  margin-left: 20.36364%;
+}
+/* line 116, style/gumby/sass/_grid.scss */
+.row .seven.centered {
+  margin-left: 15.27273%;
+}
+/* line 116, style/gumby/sass/_grid.scss */
+.row .eight.centered {
+  margin-left: 10.18182%;
+}
+/* line 116, style/gumby/sass/_grid.scss */
+.row .nine.centered {
+  margin-left: 5.09091%;
+}
+
+/* Hybrid Grid Columns */
+/* line 128, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .one.column {
+  width: 4.54545%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .one.columns {
+  width: 4.54545%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .two.columns {
+  width: 10.90909%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .three.columns {
+  width: 17.27273%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .four.columns {
+  width: 23.63636%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .five.columns {
+  width: 30%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .six.columns {
+  width: 36.36364%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .seven.columns {
+  width: 42.72727%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .eight.columns {
+  width: 49.09091%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .nine.columns {
+  width: 55.45455%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .ten.columns {
+  width: 61.81818%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .eleven.columns {
+  width: 68.18182%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .twelve.columns {
+  width: 74.54545%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .thirteen.columns {
+  width: 80.90909%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .fourteen.columns {
+  width: 87.27273%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .fifteen.columns {
+  width: 93.63636%;
+}
+/* line 132, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .sixteen.columns {
+  width: 100%;
+}
+
+/* Hybrid Push and Pull Classes */
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_one {
+  margin-left: 8.18182%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_one:first-child {
+  margin-left: 6.36364%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.one.column {
+  margin-left: -10.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.two.columns {
+  margin-left: -17.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.three.columns {
+  margin-left: -23.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.four.columns {
+  margin-left: -30.0%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.five.columns {
+  margin-left: -36.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.six.columns {
+  margin-left: -42.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.seven.columns {
+  margin-left: -49.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.eight.columns {
+  margin-left: -55.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.nine.columns {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.ten.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.eleven.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.twelve.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.thirteen.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_one.fourteen.columns {
+  margin-left: -93.63636%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_two {
+  margin-left: 14.54545%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_two:first-child {
+  margin-left: 12.72727%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.one.column {
+  margin-left: -17.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.two.columns {
+  margin-left: -23.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.three.columns {
+  margin-left: -30.0%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.four.columns {
+  margin-left: -36.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.five.columns {
+  margin-left: -42.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.six.columns {
+  margin-left: -49.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.seven.columns {
+  margin-left: -55.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.eight.columns {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.nine.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.ten.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.eleven.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.twelve.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.thirteen.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_two.fifteen.columns {
+  margin-left: -106.36364%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_three {
+  margin-left: 20.90909%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_three:first-child {
+  margin-left: 19.09091%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.one.column {
+  margin-left: -23.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.two.columns {
+  margin-left: -30.0%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.three.columns {
+  margin-left: -36.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.four.columns {
+  margin-left: -42.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.five.columns {
+  margin-left: -49.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.six.columns {
+  margin-left: -55.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.seven.columns {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.eight.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.nine.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.ten.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.eleven.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.twelve.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.fourteen.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_three.fifteen.columns {
+  margin-left: -112.72727%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_four {
+  margin-left: 27.27273%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_four:first-child {
+  margin-left: 25.45455%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.one.column {
+  margin-left: -30.0%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.two.columns {
+  margin-left: -36.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.three.columns {
+  margin-left: -42.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.four.columns {
+  margin-left: -49.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.five.columns {
+  margin-left: -55.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.six.columns {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.seven.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.eight.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.nine.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.ten.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.eleven.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.thirteen.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.fourteen.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_four.fifteen.columns {
+  margin-left: -119.09091%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_five {
+  margin-left: 33.63636%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_five:first-child {
+  margin-left: 31.81818%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.one.column {
+  margin-left: -36.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.two.columns {
+  margin-left: -42.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.three.columns {
+  margin-left: -49.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.four.columns {
+  margin-left: -55.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.five.columns {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.six.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.seven.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.eight.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.nine.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.ten.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.twelve.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.thirteen.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.fourteen.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_five.fifteen.columns {
+  margin-left: -125.45455%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_six {
+  margin-left: 40.0%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_six:first-child {
+  margin-left: 38.18182%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.one.column {
+  margin-left: -42.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.two.columns {
+  margin-left: -49.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.three.columns {
+  margin-left: -55.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.four.columns {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.five.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.six.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.seven.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.eight.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.nine.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.eleven.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.twelve.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.thirteen.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.fourteen.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_six.fifteen.columns {
+  margin-left: -131.81818%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_seven {
+  margin-left: 46.36364%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_seven:first-child {
+  margin-left: 44.54545%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.one.column {
+  margin-left: -49.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.two.columns {
+  margin-left: -55.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.three.columns {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.four.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.five.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.six.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.seven.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.eight.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.ten.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.eleven.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.twelve.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.thirteen.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.fourteen.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_seven.fifteen.columns {
+  margin-left: -138.18182%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_eight {
+  margin-left: 52.72727%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_eight:first-child {
+  margin-left: 50.90909%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.one.column {
+  margin-left: -55.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.two.columns {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.three.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.four.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.five.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.six.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.seven.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.nine.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.ten.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.eleven.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.twelve.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.thirteen.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.fourteen.columns {
+  margin-left: -138.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eight.fifteen.columns {
+  margin-left: -144.54545%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_nine {
+  margin-left: 59.09091%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_nine:first-child {
+  margin-left: 57.27273%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.one.column {
+  margin-left: -61.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.two.columns {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.three.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.four.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.five.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.six.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.eight.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.nine.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.ten.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.eleven.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.twelve.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.thirteen.columns {
+  margin-left: -138.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.fourteen.columns {
+  margin-left: -144.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_nine.fifteen.columns {
+  margin-left: -150.90909%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_ten {
+  margin-left: 65.45455%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_ten:first-child {
+  margin-left: 63.63636%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.one.column {
+  margin-left: -68.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.two.columns {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.three.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.four.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.five.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.seven.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.eight.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.nine.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.ten.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.eleven.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.twelve.columns {
+  margin-left: -138.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.thirteen.columns {
+  margin-left: -144.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.fourteen.columns {
+  margin-left: -150.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_ten.fifteen.columns {
+  margin-left: -157.27273%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_eleven {
+  margin-left: 71.81818%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_eleven:first-child {
+  margin-left: 70.0%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.one.column {
+  margin-left: -74.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.two.columns {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.three.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.four.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.six.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.seven.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.eight.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.nine.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.ten.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.eleven.columns {
+  margin-left: -138.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.twelve.columns {
+  margin-left: -144.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.thirteen.columns {
+  margin-left: -150.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.fourteen.columns {
+  margin-left: -157.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_eleven.fifteen.columns {
+  margin-left: -163.63636%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_twelve {
+  margin-left: 78.18182%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_twelve:first-child {
+  margin-left: 76.36364%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.one.column {
+  margin-left: -80.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.two.columns {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.three.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.five.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.six.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.seven.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.eight.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.nine.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.ten.columns {
+  margin-left: -138.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.eleven.columns {
+  margin-left: -144.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.twelve.columns {
+  margin-left: -150.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.thirteen.columns {
+  margin-left: -157.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.fourteen.columns {
+  margin-left: -163.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_twelve.fifteen.columns {
+  margin-left: -170.0%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_thirteen {
+  margin-left: 84.54545%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_thirteen:first-child {
+  margin-left: 82.72727%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.one.column {
+  margin-left: -87.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.two.columns {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.four.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.five.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.six.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.seven.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.eight.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.nine.columns {
+  margin-left: -138.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.ten.columns {
+  margin-left: -144.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.eleven.columns {
+  margin-left: -150.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.twelve.columns {
+  margin-left: -157.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.thirteen.columns {
+  margin-left: -163.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.fourteen.columns {
+  margin-left: -170.0%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_thirteen.fifteen.columns {
+  margin-left: -176.36364%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_fourteen {
+  margin-left: 90.90909%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_fourteen:first-child {
+  margin-left: 89.09091%;
+}
+/* line 158, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.one.column {
+  margin-left: -93.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.three.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.four.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.five.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.six.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.seven.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.eight.columns {
+  margin-left: -138.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.nine.columns {
+  margin-left: -144.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.ten.columns {
+  margin-left: -150.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.eleven.columns {
+  margin-left: -157.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.twelve.columns {
+  margin-left: -163.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.thirteen.columns {
+  margin-left: -170.0%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.fourteen.columns {
+  margin-left: -176.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fourteen.fifteen.columns {
+  margin-left: -182.72727%;
+}
+/* line 143, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_fifteen {
+  margin-left: 97.27273%;
+}
+/* line 145, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .push_fifteen:first-child {
+  margin-left: 95.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.two.columns {
+  margin-left: -106.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.three.columns {
+  margin-left: -112.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.four.columns {
+  margin-left: -119.09091%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.five.columns {
+  margin-left: -125.45455%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.six.columns {
+  margin-left: -131.81818%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.seven.columns {
+  margin-left: -138.18182%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.eight.columns {
+  margin-left: -144.54545%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.nine.columns {
+  margin-left: -150.90909%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.ten.columns {
+  margin-left: -157.27273%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.eleven.columns {
+  margin-left: -163.63636%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.twelve.columns {
+  margin-left: -170.0%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.thirteen.columns {
+  margin-left: -176.36364%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.fourteen.columns {
+  margin-left: -182.72727%;
+}
+/* line 166, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .pull_fifteen.fifteen.columns {
+  margin-left: -189.09091%;
+}
+
+/* line 180, style/gumby/sass/_grid.scss */
+.row .pull_one.one.column:first-child, .row .pull_one.two.columns:first-child, .row .pull_one.three.columns:first-child, .row .pull_one.four.columns:first-child, .row .pull_one.five.columns:first-child, .row .pull_one.six.columns:first-child, .row .pull_one.seven.columns:first-child, .row .pull_one.eight.columns:first-child, .row .pull_two.one.column:first-child, .row .pull_two.two.columns:first-child, .row .pull_two.three.columns:first-child, .row .pull_two.four.columns:first-child, .row .pull_two.five.columns:first-child, .row .pull_two.six.columns:first-child, .row .pull_two.seven.columns:first-child, .row .pull_two.nine.columns:first-child, .row .pull_three.one.column:first-child, .row .pull_three.two.columns:first-child, .row .pull_three.three.columns:first-child, .row .pull_three.four.columns:first-child, .row .pull_three.five.columns:first-child, .row .pull_three.six.columns:first-child, .row .pull_three.eight.columns:first-child, .row .pull_three.nine.columns:first-child, .row .pull_four.one.column:first-child, .row .pull_four.two.columns:first-child, .row .pull_four.three.columns:first-child, .row .pull_four.four.columns:first-child, .row .pull_four.five.columns:first-child, .row .pull_four.seven.columns:first-child, .row .pull_four.eight.columns:first-child, .row .pull_four.nine.columns:first-child, .row .pull_five.one.column:first-child, .row .pull_five.two.columns:first-child, .row .pull_five.three.columns:first-child, .row .pull_five.four.columns:first-child, .row .pull_five.six.columns:first-child, .row .pull_five.seven.columns:first-child, .row .pull_five.eight.columns:first-child, .row .pull_five.nine.columns:first-child, .row .pull_six.one.column:first-child, .row .pull_six.two.columns:first-child, .row .pull_six.three.columns:first-child, .row .pull_six.five.columns:first-child, .row .pull_six.six.columns:first-child, .row .pull_six.seven.columns:first-child, .row .pull_six.eight.columns:first-child, .row .pull_six.nine.columns:first-child, .row .pull_seven.one.column:first-child, .row .pull_seven.two.columns:first-child, .row .pull_seven.four.columns:first-child, .row .pull_seven.five.columns:first-child, .row .pull_seven.six.columns:first-child, .row .pull_seven.seven.columns:first-child, .row .pull_seven.eight.columns:first-child, .row .pull_seven.nine.columns:first-child, .row .pull_eight.one.column:first-child, .row .pull_eight.three.columns:first-child, .row .pull_eight.four.columns:first-child, .row .pull_eight.five.columns:first-child, .row .pull_eight.six.columns:first-child, .row .pull_eight.seven.columns:first-child, .row .pull_eight.eight.columns:first-child, .row .pull_eight.nine.columns:first-child, .row .pull_nine.two.columns:first-child, .row .pull_nine.three.columns:first-child, .row .pull_nine.four.columns:first-child, .row .pull_nine.five.columns:first-child, .row .pull_nine.six.columns:first-child, .row .pull_nine.seven.columns:first-child, .row .pull_nine.eight.columns:first-child, .row .pull_nine.nine.columns:first-child, .sixteen.colgrid .row .pull_one.one.column:first-child, .sixteen.colgrid .row .pull_one.two.columns:first-child, .sixteen.colgrid .row .pull_one.three.columns:first-child, .sixteen.colgrid .row .pull_one.four.columns:first-child, .sixteen.colgrid .row .pull_one.five.columns:first-child, .sixteen.colgrid .row .pull_one.six.columns:first-child, .sixteen.colgrid .row .pull_one.seven.columns:first-child, .sixteen.colgrid .row .pull_one.eight.columns:first-child, .sixteen.colgrid .row .pull_one.nine.columns:first-child, .sixteen.colgrid .row .pull_one.ten.columns:first-child, .sixteen.colgrid .row .pull_one.eleven.columns:first-child, .sixteen.colgrid .row .pull_one.twelve.columns:first-child, .sixteen.colgrid .row .pull_one.thirteen.columns:first-child, .sixteen.colgrid .row .pull_one.fourteen.columns:first-child, .sixteen.colgrid .row .pull_two.one.column:first-child, .sixteen.colgrid .row .pull_two.two.columns:first-child, .sixteen.colgrid .row .pull_two.three.columns:first-child, .sixteen.colgrid .row .pull_two.four.columns:first-child, .sixteen.colgrid .row .pull_two.five.columns:first-child, .sixteen.colgrid .row .pull_two.six.columns:first-child, .sixteen.colgrid .row .pull_two.seven.columns:first-child, .sixteen.colgrid .row .pull_two.eight.columns:first-child, .sixteen.colgrid .row .pull_two.nine.columns:first-child, .sixteen.colgrid .row .pull_two.ten.columns:first-child, .sixteen.colgrid .row .pull_two.eleven.columns:first-child, .sixteen.colgrid .row .pull_two.twelve.columns:first-child, .sixteen.colgrid .row .pull_two.thirteen.columns:first-child, .sixteen.colgrid .row .pull_two.fifteen.columns:first-child, .sixteen.colgrid .row .pull_three.one.column:first-child, .sixteen.colgrid .row .pull_three.two.columns:first-child, .sixteen.colgrid .row .pull_three.three.columns:first-child, .sixteen.colgrid .row .pull_three.four.columns:first-child, .sixteen.colgrid .row .pull_three.five.columns:first-child, .sixteen.colgrid .row .pull_three.six.columns:first-child, .sixteen.colgrid .row .pull_three.seven.columns:first-child, .sixteen.colgrid .row .pull_three.eight.columns:first-child, .sixteen.colgrid .row .pull_three.nine.columns:first-child, .sixteen.colgrid .row .pull_three.ten.columns:first-child, .sixteen.colgrid .row .pull_three.eleven.columns:first-child, .sixteen.colgrid .row .pull_three.twelve.columns:first-child, .sixteen.colgrid .row .pull_three.fourteen.columns:first-child, .sixteen.colgrid .row .pull_three.fifteen.columns:first-child, .sixteen.colgrid .row .pull_four.one.column:first-child, .sixteen.colgrid .row .pull_four.two.columns:first-child, .sixteen.colgrid .row .pull_four.three.columns:first-child, .sixteen.colgrid .row .pull_four.four.columns:first-child, .sixteen.colgrid .row .pull_four.five.columns:first-child, .sixteen.colgrid .row .pull_four.six.columns:first-child, .sixteen.colgrid .row .pull_four.seven.columns:first-child, .sixteen.colgrid .row .pull_four.eight.columns:first-child, .sixteen.colgrid .row .pull_four.nine.columns:first-child, .sixteen.colgrid .row .pull_four.ten.columns:first-child, .sixteen.colgrid .row .pull_four.eleven.columns:first-child, .sixteen.colgrid .row .pull_four.thirteen.columns:first-child, .sixteen.colgrid .row .pull_four.fourteen.columns:first-child, .sixteen.colgrid .row .pull_four.fifteen.columns:first-child, .sixteen.colgrid .row .pull_five.one.column:first-child, .sixteen.colgrid .row .pull_five.two.columns:first-child, .sixteen.colgrid .row .pull_five.three.columns:first-child, .sixteen.colgrid .row .pull_five.four.columns:first-child, .sixteen.colgrid .row .pull_five.five.columns:first-child, .sixteen.colgrid .row .pull_five.six.columns:first-child, .sixteen.colgrid .row .pull_five.seven.columns:first-child, .sixteen.colgrid .row .pull_five.eight.columns:first-child, .sixteen.colgrid .row .pull_five.nine.columns:first-child, .sixteen.colgrid .row .pull_five.ten.columns:first-child, .sixteen.colgrid .row .pull_five.twelve.columns:first-child, .sixteen.colgrid .row .pull_five.thirteen.columns:first-child, .sixteen.colgrid .row .pull_five.fourteen.columns:first-child, .sixteen.colgrid .row .pull_five.fifteen.columns:first-child, .sixteen.colgrid .row .pull_six.one.column:first-child, .sixteen.colgrid .row .pull_six.two.columns:first-child, .sixteen.colgrid .row .pull_six.three.columns:first-child, .sixteen.colgrid .row .pull_six.four.columns:first-child, .sixteen.colgrid .row .pull_six.five.columns:first-child, .sixteen.colgrid .row .pull_six.six.columns:first-child, .sixteen.colgrid .row .pull_six.seven.columns:first-child, .sixteen.colgrid .row .pull_six.eight.columns:first-child, .sixteen.colgrid .row .pull_six.nine.columns:first-child, .sixteen.colgrid .row .pull_six.eleven.columns:first-child, .sixteen.colgrid .row .pull_six.twelve.columns:first-child, .sixteen.colgrid .row .pull_six.thirteen.columns:first-child, .sixteen.colgrid .row .pull_six.fourteen.columns:first-child, .sixteen.colgrid .row .pull_six.fifteen.columns:first-child, .sixteen.colgrid .row .pull_seven.one.column:first-child, .sixteen.colgrid .row .pull_seven.two.columns:first-child, .sixteen.colgrid .row .pull_seven.three.columns:first-child, .sixteen.colgrid .row .pull_seven.four.columns:first-child, .sixteen.colgrid .row .pull_seven.five.columns:first-child, .sixteen.colgrid .row .pull_seven.six.columns:first-child, .sixteen.colgrid .row .pull_seven.seven.columns:first-child, .sixteen.colgrid .row .pull_seven.eight.columns:first-child, .sixteen.colgrid .row .pull_seven.ten.columns:first-child, .sixteen.colgrid .row .pull_seven.eleven.columns:first-child, .sixteen.colgrid .row .pull_seven.twelve.columns:first-child, .sixteen.colgrid .row .pull_seven.thirteen.columns:first-child, .sixteen.colgrid .row .pull_seven.fourteen.columns:first-child, .sixteen.colgrid .row .pull_seven.fifteen.columns:first-child, .sixteen.colgrid .row .pull_eight.one.column:first-child, .sixteen.colgrid .row .pull_eight.two.columns:first-child, .sixteen.colgrid .row .pull_eight.three.columns:first-child, .sixteen.colgrid .row .pull_eight.four.columns:first-child, .sixteen.colgrid .row .pull_eight.five.columns:first-child, .sixteen.colgrid .row .pull_eight.six.columns:first-child, .sixteen.colgrid .row .pull_eight.seven.columns:first-child, .sixteen.colgrid .row .pull_eight.nine.columns:first-child, .sixteen.colgrid .row .pull_eight.ten.columns:first-child, .sixteen.colgrid .row .pull_eight.eleven.columns:first-child, .sixteen.colgrid .row .pull_eight.twelve.columns:first-child, .sixteen.colgrid .row .pull_eight.thirteen.columns:first-child, .sixteen.colgrid .row .pull_eight.fourteen.columns:first-child, .sixteen.colgrid .row .pull_eight.fifteen.columns:first-child, .sixteen.colgrid .row .pull_nine.one.column:first-child, .sixteen.colgrid .row .pull_nine.two.columns:first-child, .sixteen.colgrid .row .pull_nine.three.columns:first-child, .sixteen.colgrid .row .pull_nine.four.columns:first-child, .sixteen.colgrid .row .pull_nine.five.columns:first-child, .sixteen.colgrid .row .pull_nine.six.columns:first-child, .sixteen.colgrid .row .pull_nine.eight.columns:first-child, .sixteen.colgrid .row .pull_nine.nine.columns:first-child, .sixteen.colgrid .row .pull_nine.ten.columns:first-child, .sixteen.colgrid .row .pull_nine.eleven.columns:first-child, .sixteen.colgrid .row .pull_nine.twelve.columns:first-child, .sixteen.colgrid .row .pull_nine.thirteen.columns:first-child, .sixteen.colgrid .row .pull_nine.fourteen.columns:first-child, .sixteen.colgrid .row .pull_nine.fifteen.columns:first-child, .sixteen.colgrid .row .pull_ten.one.column:first-child, .sixteen.colgrid .row .pull_ten.two.columns:first-child, .sixteen.colgrid .row .pull_ten.three.columns:first-child, .sixteen.colgrid .row .pull_ten.four.columns:first-child, .sixteen.colgrid .row .pull_ten.five.columns:first-child, .sixteen.colgrid .row .pull_ten.seven.columns:first-child, .sixteen.colgrid .row .pull_ten.eight.columns:first-child, .sixteen.colgrid .row .pull_ten.nine.columns:first-child, .sixteen.colgrid .row .pull_ten.ten.columns:first-child, .sixteen.colgrid .row .pull_ten.eleven.columns:first-child, .sixteen.colgrid .row .pull_ten.twelve.columns:first-child, .sixteen.colgrid .row .pull_ten.thirteen.columns:first-child, .sixteen.colgrid .row .pull_ten.fourteen.columns:first-child, .sixteen.colgrid .row .pull_ten.fifteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.one.column:first-child, .sixteen.colgrid .row .pull_eleven.two.columns:first-child, .sixteen.colgrid .row .pull_eleven.three.columns:first-child, .sixteen.colgrid .row .pull_eleven.four.columns:first-child, .sixteen.colgrid .row .pull_eleven.six.columns:first-child, .sixteen.colgrid .row .pull_eleven.seven.columns:first-child, .sixteen.colgrid .row .pull_eleven.eight.columns:first-child, .sixteen.colgrid .row .pull_eleven.nine.columns:first-child, .sixteen.colgrid .row .pull_eleven.ten.columns:first-child, .sixteen.colgrid .row .pull_eleven.eleven.columns:first-child, .sixteen.colgrid .row .pull_eleven.twelve.columns:first-child, .sixteen.colgrid .row .pull_eleven.thirteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.fourteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.fifteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.one.column:first-child, .sixteen.colgrid .row .pull_twelve.two.columns:first-child, .sixteen.colgrid .row .pull_twelve.three.columns:first-child, .sixteen.colgrid .row .pull_twelve.five.columns:first-child, .sixteen.colgrid .row .pull_twelve.six.columns:first-child, .sixteen.colgrid .row .pull_twelve.seven.columns:first-child, .sixteen.colgrid .row .pull_twelve.eight.columns:first-child, .sixteen.colgrid .row .pull_twelve.nine.columns:first-child, .sixteen.colgrid .row .pull_twelve.ten.columns:first-child, .sixteen.colgrid .row .pull_twelve.eleven.columns:first-child, .sixteen.colgrid .row .pull_twelve.twelve.columns:first-child, .sixteen.colgrid .row .pull_twelve.thirteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.fourteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.fifteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.one.column:first-child, .sixteen.colgrid .row .pull_thirteen.two.columns:first-child, .sixteen.colgrid .row .pull_thirteen.four.columns:first-child, .sixteen.colgrid .row .pull_thirteen.five.columns:first-child, .sixteen.colgrid .row .pull_thirteen.six.columns:first-child, .sixteen.colgrid .row .pull_thirteen.seven.columns:first-child, .sixteen.colgrid .row .pull_thirteen.eight.columns:first-child, .sixteen.colgrid .row .pull_thirteen.nine.columns:first-child, .sixteen.colgrid .row .pull_thirteen.ten.columns:first-child, .sixteen.colgrid .row .pull_thirteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_thirteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_thirteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.fifteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.one.column:first-child, .sixteen.colgrid .row .pull_fourteen.three.columns:first-child, .sixteen.colgrid .row .pull_fourteen.four.columns:first-child, .sixteen.colgrid .row .pull_fourteen.five.columns:first-child, .sixteen.colgrid .row .pull_fourteen.six.columns:first-child, .sixteen.colgrid .row .pull_fourteen.seven.columns:first-child, .sixteen.colgrid .row .pull_fourteen.eight.columns:first-child, .sixteen.colgrid .row .pull_fourteen.nine.columns:first-child, .sixteen.colgrid .row .pull_fourteen.ten.columns:first-child, .sixteen.colgrid .row .pull_fourteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_fourteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_fourteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.fifteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.two.columns:first-child, .sixteen.colgrid .row .pull_fifteen.three.columns:first-child, .sixteen.colgrid .row .pull_fifteen.four.columns:first-child, .sixteen.colgrid .row .pull_fifteen.five.columns:first-child, .sixteen.colgrid .row .pull_fifteen.six.columns:first-child, .sixteen.colgrid .row .pull_fifteen.seven.columns:first-child, .sixteen.colgrid .row .pull_fifteen.eight.columns:first-child, .sixteen.colgrid .row .pull_fifteen.nine.columns:first-child, .sixteen.colgrid .row .pull_fifteen.ten.columns:first-child, .sixteen.colgrid .row .pull_fifteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_fifteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_fifteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.fifteen.columns:first-child {
+  margin-left: 0;
+}
+
+/* line 184, style/gumby/sass/_grid.scss */
+.row .pull_one.nine.columns, .row .pull_two.eight.columns, .row .pull_three.seven.columns, .row .pull_four.six.columns, .row .pull_five.five.columns, .row .pull_six.four.columns, .row .pull_seven.three.columns, .row .pull_eight.two.columns, .row .pull_nine.one.columns, .sixteen.colgrid .row .pull_one.fifteen.columns, .sixteen.colgrid .row .pull_two.fourteen.columns, .sixteen.colgrid .row .pull_three.thirteen.columns, .sixteen.colgrid .row .pull_four.twelve.columns, .sixteen.colgrid .row .pull_five.eleven.columns, .sixteen.colgrid .row .pull_six.ten.columns, .sixteen.colgrid .row .pull_seven.nine.columns, .sixteen.colgrid .row .pull_eight.eight.columns, .sixteen.colgrid .row .pull_nine.seven.columns, .sixteen.colgrid .row .pull_ten.six.columns, .sixteen.colgrid .row .pull_eleven.five.columns, .sixteen.colgrid .row .pull_twelve.four.columns, .sixteen.colgrid .row .pull_thirteen.three.columns, .sixteen.colgrid .row .pull_fourteen.two.columns, .sixteen.colgrid .row .pull_fifteen.one.columns {
+  margin-left: -100%;
+}
+
+/* Hybrid Centered Classes */
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .one.centered {
+  margin-left: 47.72727%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .two.centered {
+  margin-left: 44.54545%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .three.centered {
+  margin-left: 41.36364%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .four.centered {
+  margin-left: 38.18182%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .five.centered {
+  margin-left: 35%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .six.centered {
+  margin-left: 31.81818%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .seven.centered {
+  margin-left: 28.63636%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .eight.centered {
+  margin-left: 25.45455%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .nine.centered {
+  margin-left: 22.27273%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .ten.centered {
+  margin-left: 19.09091%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .eleven.centered {
+  margin-left: 15.90909%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .twelve.centered {
+  margin-left: 12.72727%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .thirteen.centered {
+  margin-left: 9.54545%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .fourteen.centered {
+  margin-left: 6.36364%;
+}
+/* line 193, style/gumby/sass/_grid.scss */
+.sixteen.colgrid .row .fifteen.centered {
+  margin-left: 3.18182%;
+}
+
+/* line 203, style/gumby/sass/_grid.scss */
+img, object, embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 208, style/gumby/sass/_grid.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 212, style/gumby/sass/_grid.scss */
+#map_canvas img, .map_canvas img {
+  max-width: none !important;
+}
+
+/* Tile Grid */
+/* line 218, style/gumby/sass/_grid.scss */
+.tiles {
+  display: block;
+  overflow: hidden;
+}
+/* line 221, style/gumby/sass/_grid.scss */
+.tiles > li, .tiles > .tile {
+  display: block;
+  height: auto;
+  float: left;
+  padding-bottom: 0;
+}
+/* line 227, style/gumby/sass/_grid.scss */
+.tiles.two_up {
+  margin-left: -4%;
+}
+/* line 229, style/gumby/sass/_grid.scss */
+.tiles.two_up > li, .tiles.two_up > .tile {
+  margin-left: 4%;
+  width: 46%;
+}
+/* line 234, style/gumby/sass/_grid.scss */
+.tiles.three_up, .tiles.four_up {
+  margin-left: -2%;
+}
+/* line 237, style/gumby/sass/_grid.scss */
+.tiles.three_up > li, .tiles.three_up > .tile {
+  margin-left: 2%;
+  width: 31.3%;
+}
+/* line 241, style/gumby/sass/_grid.scss */
+.tiles.four_up > li, .tiles.four_up > .tile {
+  margin-left: 2%;
+  width: 23%;
+}
+/* line 245, style/gumby/sass/_grid.scss */
+.tiles.five_up {
+  margin-left: -1.5%;
+}
+/* line 247, style/gumby/sass/_grid.scss */
+.tiles.five_up > li, .tiles.five_up > .tile {
+  margin-left: 1.5%;
+  width: 18.5%;
+}
+
+/* Nicolas Gallagher's micro clearfix */
+/* line 256, style/gumby/sass/_grid.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 3, style/gumby/sass/functions/_clearfix.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 7, style/gumby/sass/functions/_clearfix.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 260, style/gumby/sass/_grid.scss */
+.row {
+  *zoom: 1;
+}
+/* line 3, style/gumby/sass/functions/_clearfix.scss */
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+/* line 7, style/gumby/sass/functions/_clearfix.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 268, style/gumby/sass/_grid.scss */
+.valign:before {
+  content: ' ';
+  display: inline-block;
+  height: 400px;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+/* line 275, style/gumby/sass/_grid.scss */
+.valign > div, .valign > article, .valign > section, .valign > figure {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* line 285, style/gumby/sass/_grid.scss */
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* line 291, style/gumby/sass/_grid.scss */
+  .container {
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 296, style/gumby/sass/_grid.scss */
+  .row {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 302, style/gumby/sass/_grid.scss */
+  .row .row .column, .row .row .columns {
+    padding: 0;
+  }
+  /* line 306, style/gumby/sass/_grid.scss */
+  .row .centered {
+    margin-left: 0 !important;
+  }
+
+  /* line 310, style/gumby/sass/_grid.scss */
+  .column, .columns {
+    width: auto !important;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 316, style/gumby/sass/_grid.scss */
+  .column:last-child, .columns:last-child {
+    margin-right: 0;
+    float: none;
+  }
+
+  /* line 322, style/gumby/sass/_grid.scss */
+  [class*="column"] + [class*="column"]:last-child {
+    float: none;
+  }
+  /* line 325, style/gumby/sass/_grid.scss */
+  [class*="column"]:before {
+    display: table;
+  }
+  /* line 328, style/gumby/sass/_grid.scss */
+  [class*="column"]:after {
+    display: table;
+    clear: both;
+  }
+
+  /* line 333, style/gumby/sass/_grid.scss */
+  [class^="push_"],
+  [class*="push_"],
+  [class^="pull_"],
+  [class*="pull_"] {
+    margin-left: 0 !important;
+  }
+}
+/* SHAME */
+/* line 5, style/gumby/sass/_shame.scss */
+.ie8 .xxwide,
+.ie8 .xwide,
+.ie8 .wide,
+.ie8 .normal,
+.ie8 .narrow,
+.ie8 .xnarrow {
+  display: inline;
+}
+/* line 12, style/gumby/sass/_shame.scss */
+.ie8 .xxwide + input,
+.ie8 .xwide + input,
+.ie8 .wide + input,
+.ie8 .normal + input,
+.ie8 .narrow + input,
+.ie8 .xnarrow + input {
+  display: inline;
+  margin: 0 0 0 -.25em;
+}
+/* line 20, style/gumby/sass/_shame.scss */
+.ie8 .ttip:before, .ie8 .ttip:after {
+  display: none;
+}
+/* line 24, style/gumby/sass/_shame.scss */
+.ie8 .ttip:hover:before, .ie8 .ttip:hover:after {
+  display: block;
+}
+
+/* line 33, style/gumby/sass/_shame.scss */
+.ie9 .radio.checked i, .ie9 .checkbox.checked i {
+  top: 0;
+}
+
+/* Base Styles for Infogra.ph */
+/* line 2, style/section/_base.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "helvetica",serif;
+}
+
+/* line 9, style/section/_base.scss */
+* {
+  box-sizing: border-box;
+  font-family: "helvetica", sans-serif;
+}
+
+/* line 14, style/section/_base.scss */
+body.infograph_application {
+  color: #3B535D;
+  font-size: 14px;
+  line-height: 1.5em;
+  overflow-x: hidden;
+}
+
+/* line 21, style/section/_base.scss */
+p, ul, ol, span, em {
+  color: #3B535D;
+  font-size: 14px;
+}
+
+/* line 26, style/section/_base.scss */
+h1 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1em;
+}
+
+/* line 27, style/section/_base.scss */
+h2 {
+  font-family: "helvetica", sans-serif;
+  font-size: 25px;
+}
+
+/* line 28, style/section/_base.scss */
+h3 {
+  font-family: "helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* line 29, style/section/_base.scss */
+h4 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* line 30, style/section/_base.scss */
+h5 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50.67px;
+}
+
+/* line 31, style/section/_base.scss */
+h6 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/* line 33, style/section/_base.scss */
+#sitewrap {
+  overflow-x: hidden;
+}
+
+/* line 37, style/section/_base.scss */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 1140px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 21, style/gumby/sass/functions/_semantic-grid.scss */
+.container > *:first-child {
+  margin-left: 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 37, style/section/_base.scss */
+  .container {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 43, style/section/_base.scss */
+.container .thirds {
+  width: 79.63636%;
+  margin-left: 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 43, style/section/_base.scss */
+  .container .thirds {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* line 47, style/section/_base.scss */
+.container .quarter {
+  width: 28.72727%;
+  margin-left: 12%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 47, style/section/_base.scss */
+  .container .quarter {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* line 94, style/gumby/sass/functions/_semantic-grid.scss */
+.container .quarter:first-child {
+  margin-left: 10.18182%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 47, style/section/_base.scss */
+  .container .quarter {
+    margin-left: 0;
+  }
+  /* line 99, style/gumby/sass/functions/_semantic-grid.scss */
+  .container .quarter:first-child {
+    margin-left: 0;
+  }
+}
+/* line 53, style/section/_base.scss */
+.container .row .columns:first-of-type {
+  margin-left: 0;
+}
+
+/* line 60, style/section/_base.scss */
+input, textarea {
+  background: none;
+  border: 2px solid #fff;
+  padding: 10px;
+  color: #fff;
+  border-radius: 2px;
+}
+/* line 67, style/section/_base.scss */
+input:focus, textarea:focus {
+  border-color: #49677c;
+  outline: none;
+  color: #49677c;
+}
+/* line 72, style/section/_base.scss */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: white;
+}
+/* line 75, style/section/_base.scss */
+input:-moz-placeholder, textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white;
+  opacity: 1;
+}
+/* line 79, style/section/_base.scss */
+input::-moz-placeholder, textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+  opacity: 1;
+}
+/* line 83, style/section/_base.scss */
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: white;
+}
+
+/* line 87, style/section/_base.scss */
+textarea {
+  margin-top: 1em;
+}
+
+/* line 91, style/section/_base.scss */
+input[type="submit"] {
+  font-family: "helvetica", sans-serif;
+  font-size: 25px;
+  font-size: 16px;
+  display: inline-block;
+  background: #f96b61;
+  border-radius: 2px;
+  padding: 10px 30px;
+  border: none;
+  color: white;
+}
+
+/* line 102, style/section/_base.scss */
+[class^="icon-"] a:before,
+[class*=" icon-"] a:before,
+[class^="icon-"] a:after,
+[class*=" icon-"] a:after,
+i[class^="icon-"],
+i[class*=" icon-"] {
+  font-family: "FontAwesome";
+}
+
+/* line 13, style/style.scss */
+#infograph_application {
+  /* Site Menu Section of Infogra.ph */
+  /* Header Section of Infogra.ph */
+  /* Styles for infographic section of infogra.ph */
+  /* Post Content Styles for infogra.ph */
+  /* infogra.ph Color Palette */
+  /* infogra.ph footer */
+  /** Modal Styles for infogra.ph **/
+}
+/* line 3, style/section/_site-menu.scss */
+#infograph_application #site-menu {
+  align-content: center;
+  border-bottom: 5px solid #f96b61;
+  background: white;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  max-height: 0;
+  transition: max-height .75s ease-in;
+}
+/* line 14, style/section/_site-menu.scss */
+#infograph_application #site-menu.on {
+  max-height: 1000px;
+}
+/* line 18, style/section/_site-menu.scss */
+#infograph_application #site-menu .container {
+  padding: 20px 0 0;
+}
+/* line 22, style/section/_site-menu.scss */
+#infograph_application #site-menu .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+}
+/* line 27, style/section/_site-menu.scss */
+#infograph_application #site-menu .close .icon-close:before {
+  content: "\f00d";
+  font-size: 26px;
+}
+/* line 33, style/section/_site-menu.scss */
+#infograph_application #site-menu .seven.columns {
+  margin-left: 0;
+  padding: 0 40px;
+}
+/* line 38, style/section/_site-menu.scss */
+#infograph_application #site-menu h2.more-info {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 30pt;
+  margin: 0 40px 1em;
+}
+/* line 43, style/section/_site-menu.scss */
+#infograph_application #site-menu img {
+  width: 187px;
+  height: 187px;
+}
+/* line 48, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu {
+  display: inline-block;
+  line-height: 0;
+}
+/* line 52, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .owl-stage-outer {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+/* line 57, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .owl-item {
+  width: 9.7vw;
+  height: 200px;
+  max-width: 90%;
+}
+/* line 62, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item {
+  width: 100%;
+  height: 85%;
+  background-size: auto 100%;
+  background-position: center center;
+  border: 5px solid #03212e;
+  padding: 30px 15px 20px;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+/* line 77, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(11, 36, 47, 0.9);
+  transition: .25s background-color ease-in-out;
+}
+/* line 91, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item.current {
+  border: 5px solid #f96b61;
+}
+/* line 93, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item.current:after {
+  content: '';
+  width: 0px;
+  height: 0;
+  display: block;
+  border-style: solid;
+  border-width: 30px 30px 0 30px;
+  border-color: #f96b61 transparent transparent;
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 0px;
+  bottom: -50px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+/* line 106, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item.first, #infograph_application #site-menu #menu .nav-item:hover {
+  background-size: auto 100%;
+  border: 5px solid #f96b61;
+}
+/* line 110, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item:hover {
+  background-size: auto 110%;
+  border: 5px solid #f96b61;
+}
+/* line 113, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item:hover:before {
+  background-color: rgba(11, 36, 47, 0.4);
+}
+/* line 117, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item a {
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -ms-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  transition: background .5s ease;
+}
+/* line 131, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item a:hover {
+  background: transparent;
+}
+/* line 136, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item h4 {
+  color: #21a591;
+  max-width: 90%;
+  padding: 10px 5px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: capitalize;
+  display: inline-block;
+  z-index: 4;
+  position: relative;
+}
+/* line 148, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item h4 .date {
+  color: white;
+  font-family: "bebas-neue";
+}
+/* line 154, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item h3 {
+  color: #fff;
+  opacity: 1;
+  padding: 15px 0px;
+  position: relative;
+  font-family: "bebas-neue";
+  top: 0;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+/* line 167, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item.first h3 {
+  display: none;
+}
+/* line 170, style/section/_site-menu.scss */
+#infograph_application #site-menu #menu .nav-item:hover h3, #infograph_application #site-menu #menu .nav-item:hover h4 {
+  opacity: 0;
+  top: -15px;
+}
+/* line 181, style/section/_site-menu.scss */
+#infograph_application #sitewrap.show-nav {
+  overflow-y: visible;
+}
+/* line 184, style/section/_site-menu.scss */
+#infograph_application #sitewrap.show-nav #sitecanvas {
+  -webkit-transform: translate3d(0, 400px, 0);
+  transform: translate3d(0, 400px, 0);
+}
+/* line 191, style/section/_site-menu.scss */
+#infograph_application h1 .fa-navicon {
+  background-color: #f96b61;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  margin: 0 15px 0 0;
+  padding: 15px 15px;
+}
+/* line 200, style/section/_site-menu.scss */
+#infograph_application a.next, #infograph_application a.prev {
+  color: #fff;
+  display: block;
+  font-size: 300%;
+  position: relative;
+  top: -180px;
+  background: none;
+}
+/* line 208, style/section/_site-menu.scss */
+#infograph_application a.next i:before, #infograph_application a.prev i:before {
+  color: #21a5b9;
+  opacity: .5;
+}
+/* line 213, style/section/_site-menu.scss */
+#infograph_application a.prev {
+  display: block;
+  left: -35px;
+  float: left;
+}
+/* line 218, style/section/_site-menu.scss */
+#infograph_application a.next {
+  display: block;
+  float: right;
+  right: -35px;
+}
+/* line 224, style/section/_site-menu.scss */
+#infograph_application .sidebar {
+  float: right;
+}
+@media screen and (max-width: 767px) {
+  /* line 224, style/section/_site-menu.scss */
+  #infograph_application .sidebar {
+    float: none;
+    margin: 1em 40px 3em;
+  }
+}
+/* line 231, style/section/_site-menu.scss */
+#infograph_application #menu2 {
+  font-family: "helvetica", sans-serif;
+  font-size: 25px;
+  font-size: 16px;
+  list-style-type: none;
+  margin: 5px 0 0;
+  padding: 0;
+}
+/* line 239, style/section/_site-menu.scss */
+#infograph_application #menu2 li {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 15px 0;
+  transition: color .5s;
+  cursor: pointer;
+}
+/* line 245, style/section/_site-menu.scss */
+#infograph_application #menu2 li a {
+  color: #49677c;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all .25s;
+}
+/* line 251, style/section/_site-menu.scss */
+#infograph_application #menu2 li a#about::before {
+  content: "";
+  background-image: url("images/info_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 20px;
+}
+/* line 259, style/section/_site-menu.scss */
+#infograph_application #menu2 li a#about:hover::before {
+  background-image: url("images/info_icon_active.png");
+}
+/* line 263, style/section/_site-menu.scss */
+#infograph_application #menu2 li a#commenting::before {
+  content: "";
+}
+/* line 266, style/section/_site-menu.scss */
+#infograph_application #menu2 li a#contact::before {
+  content: "";
+}
+/* line 270, style/section/_site-menu.scss */
+#infograph_application #menu2 li a .elefint-logo, #infograph_application #menu2 li a::before {
+  display: inline-block;
+  width: 21px;
+  vertical-align: middle;
+  margin-right: .25em;
+  font-family: "FontAwesome";
+  color: #B2B2B2;
+  transition: all .25s;
+  font-size: 20px;
+}
+/* line 282, style/section/_site-menu.scss */
+#infograph_application #menu2 li a .logomark {
+  fill: #B2B2B2;
+  transition: fill .25s;
+}
+/* line 288, style/section/_site-menu.scss */
+#infograph_application #menu2 li a::before {
+  width: 30px;
+}
+/* line 292, style/section/_site-menu.scss */
+#infograph_application #menu2 li a:hover {
+  color: #f96b61;
+}
+/* line 294, style/section/_site-menu.scss */
+#infograph_application #menu2 li a:hover::before {
+  color: #f96b61;
+}
+/* line 301, style/section/_site-menu.scss */
+#infograph_application #menu2 li:first-child {
+  border-top: none;
+  padding: 0 0 15px;
+}
+/* line 305, style/section/_site-menu.scss */
+#infograph_application #menu2 li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 310, style/section/_site-menu.scss */
+#infograph_application #menu2 li:hover {
+  color: #f96b61;
+}
+/* line 312, style/section/_site-menu.scss */
+#infograph_application #menu2 li:hover::before {
+  color: #f96b61;
+}
+/* line 313, style/section/_site-menu.scss */
+#infograph_application #menu2 li:hover .logomark {
+  fill: #f96b61;
+}
+/* line 3, style/section/_header.scss */
+#infograph_application header {
+  position: relative;
+  max-height: 50px;
+  width: 100%;
+  top: 0;
+  display: block;
+  max-width: none;
+  z-index: 1000;
+  white-space: nowrap;
+}
+/* line 13, style/section/_header.scss */
+#infograph_application header.on {
+  max-height: 1000px;
+}
+/* line 17, style/section/_header.scss */
+#infograph_application header #banner {
+  position: absolute;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  max-width: 1080px;
+  height: 45px;
+  left: 0;
+  right: 0;
+}
+/* line 31, style/section/_header.scss */
+#infograph_application header .menu-button {
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  line-height: 1.5em;
+  margin: auto;
+  top: 5px;
+  left: 15px;
+  bottom: 0;
+  cursor: pointer;
+}
+/* line 41, style/section/_header.scss */
+#infograph_application header .menu-button:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 30px;
+  margin-right: .5em;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media only screen and (min-width: 1120px) {
+  /* line 31, style/section/_header.scss */
+  #infograph_application header .menu-button {
+    position: absolute;
+  }
+}
+/* line 63, style/section/_header.scss */
+#infograph_application header .logo {
+  padding: 5px 0;
+  width: 400px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+@media screen and (max-width: 770px) {
+  /* line 63, style/section/_header.scss */
+  #infograph_application header .logo {
+    width: 100px;
+  }
+}
+/* line 75, style/section/_header.scss */
+#infograph_application header .logo > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media only screen and (all-tablets) {
+  /* line 80, style/section/_header.scss */
+  #infograph_application header .logo .large-logo {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 80, style/section/_header.scss */
+  #infograph_application header .logo .large-logo {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 84, style/section/_header.scss */
+  #infograph_application header .logo .small-logo {
+    display: none !important;
+  }
+}
+/* line 87, style/section/_header.scss */
+#infograph_application header .logo .tagline {
+  font-family: "helvetica", sans-serif;
+  font-size: 12px;
+  color: #f96b61;
+  font-size: 16px;
+  margin-left: 10px;
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+  white-space: normal;
+  text-transform: initial;
+}
+@media screen and (max-width: 770px) {
+  /* line 87, style/section/_header.scss */
+  #infograph_application header .logo .tagline {
+    width: 60vw;
+    margin-top: 0;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    display: none;
+  }
+}
+/* line 110, style/section/_header.scss */
+#infograph_application header .sharing {
+  text-align: left;
+  float: right;
+  width: 120px;
+  white-space: nowrap;
+}
+/* line 117, style/section/_header.scss */
+#infograph_application header .sharing li {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 122, style/section/_header.scss */
+#infograph_application header .sharing .follow-us {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-right: 1em;
+  padding: 10px 0;
+}
+/* line 128, style/section/_header.scss */
+#infograph_application header .sharing .social {
+  width: 45px;
+  height: 45px;
+  margin-left: -4px;
+  background-color: #eee;
+  transition: height .5s ease-in-out;
+  position: relative;
+}
+/* line 135, style/section/_header.scss */
+#infograph_application header .sharing .social:hover {
+  height: 100px;
+}
+/* line 138, style/section/_header.scss */
+#infograph_application header .sharing .social a::before {
+  color: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  font-size: 30px;
+  text-align: center;
+}
+/* line 148, style/section/_header.scss */
+#infograph_application header .sharing .social.facebook {
+  background: #3b5998;
+}
+/* line 150, style/section/_header.scss */
+#infograph_application header .sharing .social.facebook a::before {
+  content: "";
+  font-family: "FontAwesome";
+}
+/* line 155, style/section/_header.scss */
+#infograph_application header .sharing .social.twitter {
+  background: #00aced;
+}
+/* line 157, style/section/_header.scss */
+#infograph_application header .sharing .social.twitter a::before {
+  content: "";
+  font-family: "FontAwesome";
+}
+/* line 97, style/section/_infographic.scss */
+#infograph_application #infographic {
+  z-index: -1;
+}
+/* line 100, style/section/_infographic.scss */
+#infograph_application #infographic .feature-image {
+  opacity: .1;
+  transition: opacity 1s ease-in;
+}
+/* line 103, style/section/_infographic.scss */
+#infograph_application #infographic .feature-image img {
+  vertical-align: top;
+}
+/* line 107, style/section/_infographic.scss */
+#infograph_application #infographic.open .feature-image {
+  opacity: 1;
+}
+/* line 111, style/section/_infographic.scss */
+#infograph_application #infographic .tiles {
+  max-height: 0;
+  transition: max-height 1s ease-in;
+  overflow: hidden;
+  /* -- make sure to declare a default for every property that you want animated -- */
+  /* -- general styles, including Y axis rotation -- */
+}
+/* line 115, style/section/_infographic.scss */
+#infograph_application #infographic .tiles li.tile-container {
+  display: inline-block;
+  width: 50%;
+}
+/* line 120, style/section/_infographic.scss */
+#infograph_application #infographic .tiles li.tile-container .front::after, #infograph_application #infographic .tiles li.tile-container .back::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  transition: all .5s;
+}
+/* line 131, style/section/_infographic.scss */
+#infograph_application #infographic .tiles li.tile-container .front:hover::after, #infograph_application #infographic .tiles li.tile-container .back:hover::after {
+  border-width: 0 0 30px 30px;
+  border-style: solid;
+  border-color: #fff;
+  box-shadow: 1px 1px;
+}
+/* line 138, style/section/_infographic.scss */
+#infograph_application #infographic .tiles li.tile-container .front[corner-color="black"]::after, #infograph_application #infographic .tiles li.tile-container .back[corner-color="black"]::after {
+  border-left-color: #161e20;
+}
+/* line 141, style/section/_infographic.scss */
+#infograph_application #infographic .tiles li.tile-container .front[corner-color="blue"]::after, #infograph_application #infographic .tiles li.tile-container .back[corner-color="blue"]::after {
+  border-left-color: #9cc9cc;
+}
+/* line 144, style/section/_infographic.scss */
+#infograph_application #infographic .tiles li.tile-container .front[corner-color="darkblue"]::after, #infograph_application #infographic .tiles li.tile-container .back[corner-color="darkblue"]::after {
+  border-left-color: #538794;
+}
+/* line 147, style/section/_infographic.scss */
+#infograph_application #infographic .tiles li.tile-container .front[corner-color="yellow"]::after, #infograph_application #infographic .tiles li.tile-container .back[corner-color="yellow"]::after {
+  border-left-color: #ecec2a;
+}
+/* line 150, style/section/_infographic.scss */
+#infograph_application #infographic .tiles li.tile-container .front[corner-color="white"]::after, #infograph_application #infographic .tiles li.tile-container .back[corner-color="white"]::after {
+  border-left-color: #ffffff;
+}
+/* line 4, style/section/_infographic.scss */
+#infograph_application #infographic .tiles .card {
+  float: left;
+  width: 50vw;
+  height: 31.3vw;
+  position: relative;
+  font-size: .8em;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective: 600px;
+}
+/* line 17, style/section/_infographic.scss */
+#infograph_application #infographic .tiles .card .front {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: inherit;
+  height: inherit;
+  background: #6b7077;
+  text-align: center;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+/* line 44, style/section/_infographic.scss */
+#infograph_application #infographic .tiles .card.flip .front {
+  z-index: 900;
+  background: #333;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 54, style/section/_infographic.scss */
+#infograph_application #infographic .tiles .card .back {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  width: inherit;
+  height: inherit;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-179deg);
+  /* setting to 180 causes an unnatural-looking half-flip */
+  transform: rotateY(-179deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+/* line 80, style/section/_infographic.scss */
+#infograph_application #infographic .tiles .card.flip .back {
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+}
+/* line 87, style/section/_infographic.scss */
+#infograph_application #infographic .tiles .game {
+  position: absolute;
+  right: 3vw;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50%;
+}
+/* line 161, style/section/_infographic.scss */
+#infograph_application #infographic.open .tiles {
+  max-height: 100vw;
+}
+/* line 2, style/section/_post-content.scss */
+#infograph_application .main {
+  position: relative;
+  z-index: 10;
+}
+/* line 6, style/section/_post-content.scss */
+#infograph_application #article {
+  z-index: 10;
+  overflow: visible;
+  width: 100%;
+  max-width: 1140px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 21, style/gumby/sass/functions/_semantic-grid.scss */
+#infograph_application #article > *:first-child {
+  margin-left: 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 6, style/section/_post-content.scss */
+  #infograph_application #article {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 12, style/section/_post-content.scss */
+#infograph_application #article p {
+  margin-bottom: 1.5em;
+}
+/* line 15, style/section/_post-content.scss */
+#infograph_application #article a:link {
+  color: #f96b61;
+  text-decoration: none;
+}
+/* line 19, style/section/_post-content.scss */
+#infograph_application #article a:visited {
+  color: #d95650;
+}
+/* line 23, style/section/_post-content.scss */
+#infograph_application #article li {
+  padding-left: 1em;
+  margin-left: 1em;
+  margin-bottom: 1.5em;
+}
+/* line 27, style/section/_post-content.scss */
+#infograph_application #article li::before {
+  content: "•";
+  position: absolute;
+  color: #f96b61;
+  font-size: 18px;
+  left: 2em;
+}
+/* line 35, style/section/_post-content.scss */
+#infograph_application #article ul, #infograph_application #article ol {
+  padding: 5px 2em;
+}
+/* line 37, style/section/_post-content.scss */
+#infograph_application #article ol {
+  padding-left: 0;
+  counter-reset: item;
+  position: relative;
+}
+/* line 41, style/section/_post-content.scss */
+#infograph_application #article ol li {
+  padding-left: .5em;
+}
+/* line 43, style/section/_post-content.scss */
+#infograph_application #article ol li::before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: #3B535D;
+  left: 0;
+  font-size: 14px;
+}
+/* line 54, style/section/_post-content.scss */
+#infograph_application #article .post-preview {
+  transition: all 1s ease-in;
+  transition-delay: .5s;
+  color: white;
+  width: 100%;
+  margin-left: 0;
+  font-family: "merriweather",serif;
+}
+/* line 63, style/section/_post-content.scss */
+#infograph_application #article .post-preview p {
+  font-size: 18px;
+  color: white;
+  margin-top: 1em;
+  transition: all 1s ease-in;
+  transition-delay: .5s;
+}
+/* line 71, style/section/_post-content.scss */
+#infograph_application #article .post-preview h2, #infograph_application #article .post-preview h3 {
+  transition: all 1s ease-in;
+  transition-delay: .5s;
+}
+/* line 76, style/section/_post-content.scss */
+#infograph_application #article .post-preview .post-date {
+  font-family: "helvetica", sans-serif;
+  font-size: 25px;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-bottom: 1em;
+  display: inline-block;
+  clear: both;
+  color: white;
+}
+/* line 89, style/section/_post-content.scss */
+#infograph_application #article .post-preview .post-title {
+  font-family: "Bebas-neue";
+  font-size: 50px;
+  margin-bottom: .25em;
+  padding: 5px 0;
+  transition: all 1s ease-in;
+  transition-delay: .5s;
+  line-height: 1em;
+}
+/* line 99, style/section/_post-content.scss */
+#infograph_application #article .post-preview .toggle-infographic {
+  font-family: "helvetica", sans-serif;
+  font-size: 25px;
+  font-size: 20px;
+  display: inline-block;
+  background: #f96b61;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 1em;
+  cursor: pointer;
+}
+/* line 108, style/section/_post-content.scss */
+#infograph_application #article .post-preview .toggle-infographic:before {
+  content: "";
+  font-family: "FontAwesome";
+  margin-right: .5em;
+  color: white;
+}
+/* line 114, style/section/_post-content.scss */
+#infograph_application #article .post-preview .toggle-infographic::after {
+  content: "View Infographic";
+  font-family: "Helvetica";
+  font-size: 20px;
+  color: white;
+}
+/* line 120, style/section/_post-content.scss */
+#infograph_application #article .post-preview .toggle-infographic:hover {
+  background-color: #ee5246;
+}
+@media only screen and (min-width: 860px) {
+  /* line 54, style/section/_post-content.scss */
+  #infograph_application #article .post-preview {
+    margin-top: -350px;
+    margin-bottom: 150px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  /* line 54, style/section/_post-content.scss */
+  #infograph_application #article .post-preview {
+    margin-top: 40px;
+  }
+  /* line 131, style/section/_post-content.scss */
+  #infograph_application #article .post-preview p {
+    color: #3B535D;
+  }
+  /* line 132, style/section/_post-content.scss */
+  #infograph_application #article .post-preview .post-date {
+    border-color: #0B242F;
+    color: #0B242F;
+  }
+  /* line 137, style/section/_post-content.scss */
+  #infograph_application #article .post-preview h2 {
+    color: #0B242F;
+  }
+  /* line 138, style/section/_post-content.scss */
+  #infograph_application #article .post-preview h3 {
+    color: #f96b61;
+  }
+  /* line 139, style/section/_post-content.scss */
+  #infograph_application #article .post-preview .toggle-infographic {
+    position: absolute;
+    top: -120px;
+  }
+}
+/* line 145, style/section/_post-content.scss */
+#infograph_application #article:not(.open) .post-preview {
+  color: white;
+}
+/* line 147, style/section/_post-content.scss */
+#infograph_application #article.open .post-preview {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+/* line 150, style/section/_post-content.scss */
+#infograph_application #article.open .post-preview p {
+  color: #3B535D;
+}
+/* line 151, style/section/_post-content.scss */
+#infograph_application #article.open .post-preview .post-date {
+  border-color: #0B242F;
+  color: #0B242F;
+}
+/* line 155, style/section/_post-content.scss */
+#infograph_application #article.open .post-preview .toggle-infographic {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 100;
+  margin-top: 0;
+  border-radius: 0 0 4px 4px;
+  padding: 5px 10px;
+  transition: .25s all ease-in-out 1s;
+}
+/* line 164, style/section/_post-content.scss */
+#infograph_application #article.open .post-preview .toggle-infographic::before, #infograph_application #article.open .post-preview .toggle-infographic::after {
+  display: block;
+  width: auto;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+/* line 171, style/section/_post-content.scss */
+#infograph_application #article.open .post-preview .toggle-infographic::before {
+  content: "";
+}
+/* line 174, style/section/_post-content.scss */
+#infograph_application #article.open .post-preview .toggle-infographic::after {
+  content: "Close";
+  font-family: "Helvetica";
+  font-size: 18px;
+}
+/* line 183, style/section/_post-content.scss */
+#infograph_application #article.open h2 {
+  color: #0B242F;
+}
+/* line 184, style/section/_post-content.scss */
+#infograph_application #article.open h3 {
+  color: #f96b61;
+}
+/* line 187, style/section/_post-content.scss */
+#infograph_application #article .post-content {
+  width: 59.27273%;
+  margin-left: 0;
+  font-family: "merriweather",serif;
+}
+@media only screen and (max-width: 767px) {
+  /* line 187, style/section/_post-content.scss */
+  #infograph_application #article .post-content {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* line 191, style/section/_post-content.scss */
+#infograph_application #article .post-content .addthis_button_more {
+  display: block;
+  margin: .5em 0 1em;
+  font-family: "Bebas-neue", sans-serif;
+  font-size: 22px;
+}
+/* line 196, style/section/_post-content.scss */
+#infograph_application #article .post-content .addthis_button_more span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/* line 203, style/section/_post-content.scss */
+#infograph_application #article .post-content .video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+/* line 212, style/section/_post-content.scss */
+#infograph_application #article .post-content .video iframe,
+#infograph_application #article .post-content .video object,
+#infograph_application #article .post-content .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 223, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles {
+  width: 49.09091%;
+  max-width: 290px;
+  float: right;
+}
+@media only screen and (max-width: 767px) {
+  /* line 223, style/section/_post-content.scss */
+  #infograph_application #article #recommended-articles {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  /* line 223, style/section/_post-content.scss */
+  #infograph_application #article #recommended-articles {
+    margin-top: 40px;
+    max-width: none;
+    width: 100%;
+  }
+}
+/* line 233, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles.sticky {
+  position: fixed;
+  top: 80px;
+  right: 45px;
+}
+/* line 238, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles.sticky p {
+  max-height: 0;
+  overflow: hidden;
+}
+/* line 242, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles.sticky.sticky-bottom {
+  position: absolute;
+  bottom: 40px;
+  display: block;
+}
+/* line 249, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles h4 {
+  margin-bottom: 1em;
+  font-size: 30px;
+  font-family: "Bebas-neue", sans-serif;
+  color: #3b535d;
+}
+/* line 256, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended {
+  align-items: flex-start;
+  display: inline-flex;
+  line-height: 1.25em;
+  margin: 0 0 25px;
+  padding-bottom: 1em;
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+/* line 266, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended:last-child {
+  border: none;
+}
+/* line 270, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 278, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended .articlephoto {
+  min-width: 32%;
+  max-width: 32%;
+  margin: 0 5% 0 0;
+  width: 32%;
+  background-image: url(images/radialbg.png);
+  background-size: cover;
+  padding: 3px;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 293, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended .articlephoto img {
+  float: left;
+  height: auto;
+  border-radius: 50%;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 306, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended:hover .articlephoto {
+  background-image: url(images/radialbg-orange.png);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 314, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended:hover img {
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 323, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended .date {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  border-radius: 5px;
+  text-transform: none;
+  display: inline-block;
+  margin-bottom: .5em;
+  color: #0B242F;
+  border: 2px solid #0B242F;
+  transition: .25s all ease-in-out;
+}
+/* line 335, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended .post-title {
+  margin-bottom: 3px;
+}
+/* line 339, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended .source {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+/* line 348, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended:hover .date {
+  background: #f96b61;
+  border-color: #f96b61;
+  color: white;
+}
+/* line 353, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .recommended:hover .post-title {
+  color: #f96b61;
+}
+/* line 362, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles .post-title {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: .25em;
+  transition: .25s all ease-in-out;
+}
+/* line 368, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles p {
+  font-family: "helvetica", sans-serif;
+  font-size: 12px;
+  transition: all .25s linear;
+}
+/* line 373, style/section/_post-content.scss */
+#infograph_application #article #recommended-articles img {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 379, style/section/_post-content.scss */
+#infograph_application #article .addthis_sharing_toolbox {
+  margin: 1em 0;
+}
+/* line 381, style/section/_post-content.scss */
+#infograph_application #article .addthis_sharing_toolbox .at-share-btn {
+  margin-right: .75em;
+}
+/* line 386, style/section/_post-content.scss */
+#infograph_application #article .sources {
+  margin-top: 1em;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+/* line 390, style/section/_post-content.scss */
+#infograph_application #article .sources * {
+  color: #708d99;
+}
+/* line 392, style/section/_post-content.scss */
+#infograph_application #article .sources h4 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/* line 398, style/section/_post-content.scss */
+#infograph_application #article .sources a {
+  color: #21a5b9;
+}
+/* line 402, style/section/_post-content.scss */
+#infograph_application #article .sources li {
+  margin-bottom: 5px;
+}
+/* line 3, style/section/_opinions.scss */
+#infograph_application section#opinions {
+  color: #fff;
+  display: block;
+  margin: 75px 0 0;
+  padding: 0 0 50px;
+  width: 100%;
+  background: #172939;
+  border-top: 4px solid #21a5b9;
+  font-family: "Merriweather", sans-serif;
+}
+/* line 13, style/section/_opinions.scss */
+#infograph_application section#opinions h5 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1em;
+  background: white;
+  border: 4px solid #21a5b9;
+  color: #21a5b9;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  display: block;
+  font-size: 175%;
+  margin: 0 auto 1em;
+  max-width: 32%;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  top: -1.5em;
+}
+@media screen and (max-width: 770px) {
+  /* line 13, style/section/_opinions.scss */
+  #infograph_application section#opinions h5 {
+    max-width: 100%;
+  }
+}
+/* line 37, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionsources img, #infograph_application section#opinions #opinionpieces img {
+  max-width: 100%;
+}
+/* line 41, style/section/_opinions.scss */
+#infograph_application section#opinions .owl-stage {
+  margin: auto;
+}
+/* line 44, style/section/_opinions.scss */
+#infograph_application section#opinions .owl-stage-outer {
+  overflow: visible;
+}
+/* line 49, style/section/_opinions.scss */
+#infograph_application section#opinions .source {
+  padding: 0 5%;
+  margin: 0 50px;
+}
+/* line 53, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .author {
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 62, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .readmore span {
+  top: 0;
+}
+/* line 65, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .readmore span:before {
+  content: 'Read More';
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+/* line 75, style/section/_opinions.scss */
+#infograph_application section#opinions .source:active span:before {
+  color: #f96b61;
+  color: rgba(249, 107, 97, 0);
+}
+/* line 80, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .author {
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 88, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .readmore span {
+  top: 0;
+}
+/* line 92, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .readmore {
+  opacity: 1;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+}
+/* line 99, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .readmore span {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid white;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+/* line 106, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .readmore span::before {
+  content: "";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+/* line 111, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .readmore span::after {
+  content: 'Read';
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+/* line 123, style/section/_opinions.scss */
+#infograph_application section#opinions .source.current .authorphoto img {
+  opacity: 1;
+}
+/* line 126, style/section/_opinions.scss */
+#infograph_application section#opinions .source.current .author h4 {
+  opacity: 0;
+}
+/* line 131, style/section/_opinions.scss */
+#infograph_application section#opinions .source.current:hover .readmore span::before {
+  content: "";
+}
+/* line 134, style/section/_opinions.scss */
+#infograph_application section#opinions .source.current:hover .readmore span::after {
+  content: 'Close';
+}
+/* line 144, style/section/_opinions.scss */
+#infograph_application section#opinions .source:active span:before {
+  color: #f96b61;
+  color: rgba(249, 107, 97, 0);
+}
+/* line 149, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .authorphoto img {
+  opacity: .85;
+}
+/* line 152, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .author h4, #infograph_application section#opinions .source:hover .readmore, #infograph_application section#opinions .source:hover .authorphoto {
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 162, style/section/_opinions.scss */
+#infograph_application section#opinions .source:hover .author h4 {
+  border: 1px solid #f96b61;
+  opacity: 0;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+}
+/* line 171, style/section/_opinions.scss */
+#infograph_application section#opinions .source h4 {
+  min-height: 1em;
+}
+/* line 177, style/section/_opinions.scss */
+#infograph_application section#opinions .active .source::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -55px;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #21a5b9;
+  margin: auto;
+  opacity: 0;
+  transition: 1.1Fis opacity, 1s bottom;
+}
+/* line 193, style/section/_opinions.scss */
+#infograph_application section#opinions .active .source.current::after {
+  opacity: 1;
+  transition-delay: 1s, 0s;
+  bottom: -36px;
+}
+/* line 200, style/section/_opinions.scss */
+#infograph_application section#opinions .author {
+  align-items: center;
+  background-image: url(images/radialbg.png);
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 7px;
+  position: relative;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 219, style/section/_opinions.scss */
+#infograph_application section#opinions .author h4, #infograph_application section#opinions .author .readmore {
+  align-items: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 233, style/section/_opinions.scss */
+#infograph_application section#opinions .author h4 span, #infograph_application section#opinions .author .readmore span {
+  margin: 0 auto;
+}
+/* line 239, style/section/_opinions.scss */
+#infograph_application section#opinions .author h4 {
+  border: 2px solid #fff;
+  outline: 1px solid transparent;
+  opacity: 1;
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
+}
+/* line 247, style/section/_opinions.scss */
+#infograph_application section#opinions .author h4 small {
+  clear: left;
+  display: block;
+  float: none;
+}
+/* line 255, style/section/_opinions.scss */
+#infograph_application section#opinions .author .readmore {
+  background: #f96b61;
+  background: rgba(249, 107, 97, 0.75);
+  outline: 1px solid transparent;
+  color: #fff;
+  opacity: 0;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+}
+/* line 266, style/section/_opinions.scss */
+#infograph_application section#opinions .author .readmore span {
+  position: relative;
+  top: 25px;
+}
+/* line 271, style/section/_opinions.scss */
+#infograph_application section#opinions .author .readmore:hover {
+  color: #fff;
+}
+/* line 278, style/section/_opinions.scss */
+#infograph_application section#opinions .opinion-meta {
+  margin-top: 1em;
+  height: 42px;
+}
+/* line 282, style/section/_opinions.scss */
+#infograph_application section#opinions .opinion-meta h3, #infograph_application section#opinions .opinion-meta h4 {
+  text-align: center;
+}
+/* line 286, style/section/_opinions.scss */
+#infograph_application section#opinions .opinion-meta h3 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 23px;
+}
+/* line 290, style/section/_opinions.scss */
+#infograph_application section#opinions .opinion-meta h4 {
+  font-family: "helvetica", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+/* line 297, style/section/_opinions.scss */
+#infograph_application section#opinions .authorphoto {
+  background: #062a3c;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 307, style/section/_opinions.scss */
+#infograph_application section#opinions .authorphoto img {
+  opacity: .5;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: opacity .6s ease-in-out;
+  -moz-transition: opacity .6s ease-in-out;
+  -ms-transition: opacity .6s ease-in-out;
+  -o-transition: opacity .6s ease-in-out;
+  transition: opacity .6s ease-in-out;
+}
+/* line 321, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces {
+  display: block;
+  margin: 25px 0 0;
+}
+/* line 325, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces p {
+  color: white;
+}
+/* line 330, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces article {
+  opacity: 1;
+  -webkit-transition: opacity 1.5s ease;
+  -moz-transition: opacity 1.5s ease;
+  -ms-transition: opacity 1.5s ease;
+  -o-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+  -webkit-transition: height 2s ease;
+  -moz-transition: height 2s ease;
+  -ms-transition: height 2s ease;
+  -o-transition: height 2s ease;
+  transition: height 2s ease;
+  width: 100%;
+}
+/* line 344, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces.closed article {
+  opacity: 0;
+}
+/* line 348, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .bio {
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  background: #0B242F;
+  font-family: "Helvetica", sans-serif;
+}
+/* line 356, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-stage-outer {
+  overflow: hidden;
+}
+/* line 360, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item {
+  padding: 0 1%;
+  position: relative;
+  margin: auto;
+}
+/* line 367, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article {
+  margin: auto;
+  width: 90%;
+  max-width: 980px;
+  background: #21a5b9;
+  border-radius: 10px 10px;
+}
+/* line 374, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article h2 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #0B242F;
+  font-size: 35px;
+  padding: 1em;
+  padding: 70px 70px 0px;
+  margin-bottom: .5em;
+  line-height: 1em;
+}
+@media screen and (max-width: 770px) {
+  /* line 374, style/section/_opinions.scss */
+  #infograph_application section#opinions #opinionpieces .owl-item article h2 {
+    padding: 70px 30px 0;
+  }
+}
+/* line 387, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article > p {
+  padding: 0 70px 10px 70px;
+}
+/* line 389, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article > p:last-child {
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 770px) {
+  /* line 387, style/section/_opinions.scss */
+  #infograph_application section#opinions #opinionpieces .owl-item article > p {
+    padding: 0 30px;
+  }
+}
+/* line 397, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio {
+  margin-top: 70px;
+  padding: 45px 100px;
+  border-radius: 0 0 10px 10px;
+  display: inline-block;
+}
+/* line 402, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .authorphoto {
+  display: inline-block;
+  width: 160px;
+  height: auto;
+  margin-right: 1em;
+  vertical-align: top;
+  z-index: 10;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 412, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .authorphoto img {
+  opacity: 1;
+}
+/* line 413, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .authorphoto::after {
+  content: "";
+  display: block;
+  background: url("images/radialbg.png");
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  z-index: -1;
+}
+/* line 427, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail {
+  vertical-align: top;
+  display: inline-block;
+  width: 70%;
+  padding: 0 1em;
+}
+/* line 432, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail h3 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #21a5b9;
+  margin-bottom: .5em;
+  font-size: 35px;
+}
+/* line 439, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links {
+  margin-top: 1em;
+}
+/* line 441, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li {
+  display: inline-block;
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+/* line 446, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li::before {
+  display: inline-block;
+  margin-right: .5em;
+  font-family: "FontAwesome";
+}
+/* line 451, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li a {
+  text-decoration: none;
+}
+/* line 453, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.facebook::before {
+  content: "";
+}
+/* line 454, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.facebook a {
+  color: #163e52;
+}
+/* line 457, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.twitter::before {
+  content: "";
+  color: #3596c9;
+}
+/* line 458, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.twitter a {
+  color: #3596c9;
+}
+/* line 461, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.share::before {
+  content: "";
+}
+/* line 462, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.share a {
+  color: #f96b61;
+}
+/* line 466, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .pager {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 30px;
+}
+/* line 471, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .pager::before {
+  font-family: "FontAwesome";
+  display: block;
+}
+/* line 475, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .pager.next::before {
+  content: "";
+}
+/* line 476, style/section/_opinions.scss */
+#infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .pager.prev::before {
+  content: "";
+}
+/* line 3, style/section/_footer.scss */
+#infograph_application footer {
+  background: #0B242F;
+  padding: 0 20px 20px;
+}
+/* line 7, style/section/_footer.scss */
+#infograph_application footer h2 {
+  font-family: "helvetica", sans-serif;
+  font-size: 25px;
+  color: white;
+  margin-bottom: .25em;
+}
+/* line 13, style/section/_footer.scss */
+#infograph_application footer a {
+  color: #21a5b9;
+  text-decoration: none;
+  margin-left: 1em;
+  display: inline-block;
+  font-family: "Helvetica", sans-serif;
+}
+/* line 22, style/section/_footer.scss */
+#infograph_application footer .container > span {
+  font-family: "helvetica", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+  margin-bottom: .5em;
+}
+/* line 29, style/section/_footer.scss */
+#infograph_application footer .contact-copyright {
+  font-family: "helvetica", sans-serif;
+  font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+}
+/* line 33, style/section/_footer.scss */
+#infograph_application footer .contact {
+  color: #00dce7;
+  text-decoration: none;
+  font-family: "helvetica", sans-serif;
+  font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+}
+/* line 38, style/section/_footer.scss */
+#infograph_application footer .contact::before {
+  content: "";
+  color: #00dce7;
+  margin-right: .5em;
+  font-family: "FontAwesome";
+}
+/* line 45, style/section/_footer.scss */
+#infograph_application footer .copyright {
+  color: #49677c;
+  font-family: "helvetica", sans-serif;
+  font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+}
+/* line 51, style/section/_footer.scss */
+#infograph_application footer .elefint-mark {
+  float: right;
+  white-space: nowrap;
+  max-width: 30px;
+  overflow: hidden;
+  transition: 1s max-width;
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* line 59, style/section/_footer.scss */
+#infograph_application footer .elefint-mark:hover {
+  max-width: 1000;
+}
+/* line 62, style/section/_footer.scss */
+#infograph_application footer .elefint-mark svg {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+/* line 67, style/section/_footer.scss */
+#infograph_application footer .elefint-mark svg .logomark {
+  fill: white;
+}
+/* line 71, style/section/_footer.scss */
+#infograph_application footer .elefint-mark:hover {
+  max-width: 1000px;
+}
+/* line 77, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup {
+  margin-top: 1em;
+}
+/* line 79, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup .mc-field-group {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1em;
+  width: 22%;
+}
+/* line 84, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup .mc-field-group input {
+  width: 100%;
+  background: none;
+  border: 2px solid #49677c;
+  padding: 10px;
+  color: #49677c;
+  border-radius: 2px;
+}
+/* line 91, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup .mc-field-group input:focus {
+  border-color: #f96b61;
+  outline: none;
+  color: white;
+}
+/* line 96, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup .mc-field-group input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #49677c;
+}
+/* line 99, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup .mc-field-group input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #49677c;
+  opacity: 1;
+}
+/* line 103, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup .mc-field-group input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #49677c;
+  opacity: 1;
+}
+/* line 107, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup .mc-field-group input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #49677c;
+}
+/* line 112, style/section/_footer.scss */
+#infograph_application footer #mc_embed_signup input[type="submit"] {
+  font-family: "helvetica", sans-serif;
+  font-size: 25px;
+  font-size: 16px;
+  display: inline-block;
+  background: #f96b61;
+  border-radius: 2px;
+  padding: 10px 30px;
+  border: none;
+  color: white;
+}
+@media screen and (max-width: 770px) {
+  /* line 126, style/section/_footer.scss */
+  #infograph_application footer #mc_embed_signup .mc-field-group {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+/* line 3, style/section/_modal.scss */
+#infograph_application .infograph-modal {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-family: "merriweather", serif;
+  line-height: 1.5em;
+}
+/* line 14, style/section/_modal.scss */
+#infograph_application .infograph-modal.on {
+  opacity: 1;
+  display: block;
+}
+/* line 19, style/section/_modal.scss */
+#infograph_application .infograph-modal::before {
+  content: "";
+  display: block;
+  position: fixed;
+  background: rgba(11, 36, 47, 0.9);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  transition: opacity .25s;
+}
+/* line 32, style/section/_modal.scss */
+#infograph_application .infograph-modal .box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 980px;
+  width: 90%;
+  background: #f96b61;
+  z-index: 9999;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* line 47, style/section/_modal.scss */
+#infograph_application .infograph-modal .box.on {
+  display: block;
+}
+/* line 49, style/section/_modal.scss */
+#infograph_application .infograph-modal .box .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+}
+/* line 54, style/section/_modal.scss */
+#infograph_application .infograph-modal .box .close:before {
+  content: '';
+  display: block;
+  font-size: 24px;
+  background-image: url("images/close_x.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 60px;
+  height: 60px;
+}
+/* line 67, style/section/_modal.scss */
+#infograph_application .infograph-modal .content {
+  padding: 3em 4em;
+  color: white;
+}
+/* line 71, style/section/_modal.scss */
+#infograph_application .infograph-modal .content p, #infograph_application .infograph-modal .content em {
+  color: white;
+}
+/* line 75, style/section/_modal.scss */
+#infograph_application .infograph-modal .content a {
+  color: #0B242F;
+  text-decoration: none;
+}
+/* line 80, style/section/_modal.scss */
+#infograph_application .infograph-modal .content h2 {
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin-bottom: .5em;
+  color: #0B242F;
+}
+/* line 87, style/section/_modal.scss */
+#infograph_application .infograph-modal .links {
+  margin-top: 1em;
+}
+/* line 89, style/section/_modal.scss */
+#infograph_application .infograph-modal .links li {
+  width: 25%;
+  white-space: normal;
+  display: inline-block;
+  font-family: "bebas-neue";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 23px;
+  height: 3em;
+  vertical-align: middle;
+  padding: 2% 1%;
+  cursor: pointer;
+  text-align: center;
+}
+/* line 100, style/section/_modal.scss */
+#infograph_application .infograph-modal .links li::before {
+  display: inline-block;
+  margin-right: .5em;
+  font-family: "FontAwesome";
+  color: white;
+}
+/* line 106, style/section/_modal.scss */
+#infograph_application .infograph-modal .links li:not(.elefint) {
+  padding: 3% 1%;
+  text-align: center;
+  color: white;
+}
+/* line 112, style/section/_modal.scss */
+#infograph_application .infograph-modal .links li.facebook {
+  background-color: #163e52;
+}
+/* line 113, style/section/_modal.scss */
+#infograph_application .infograph-modal .links li.facebook::before {
+  content: "";
+}
+/* line 116, style/section/_modal.scss */
+#infograph_application .infograph-modal .links li.twitter {
+  background-color: #3596c9;
+}
+/* line 117, style/section/_modal.scss */
+#infograph_application .infograph-modal .links li.twitter::before {
+  content: "";
+}
+/* line 120, style/section/_modal.scss */
+#infograph_application .infograph-modal .links li.share {
+  background-color: #0B242F;
+}
+/* line 126, style/section/_modal.scss */
+#infograph_application .infograph-modal .links .elefint {
+  background: white;
+}
+/* line 128, style/section/_modal.scss */
+#infograph_application .infograph-modal .links .elefint em {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 135, style/section/_modal.scss */
+#infograph_application .infograph-modal .links .elefint-mark svg {
+  width: 48px;
+  height: auto;
+  margin-right: -5px;
+}
+/* line 140, style/section/_modal.scss */
+#infograph_application .infograph-modal .links .elefint-mark svg .logomark {
+  fill: #f05a22;
+}
+/* line 147, style/section/_modal.scss */
+#infograph_application .infograph-modal #about {
+  height: 350px;
+}
+/* line 149, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links {
+  white-space: nowrap;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+/* line 154, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li {
+  display: inline-block;
+  width: 25.2%;
+  padding: 1%;
+  color: white;
+  font-size: 20px;
+  margin-left: -5px;
+}
+/* line 162, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 164, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li:not(.elefint) {
+  padding: 2% 1%;
+}
+/* line 167, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li::before {
+  display: inline-block;
+  margin: 0 .5em 0 1em;
+  font-family: "FontAwesome";
+}
+/* line 172, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li.facebook {
+  color: white;
+  background: #163e52;
+}
+/* line 173, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li.facebook::before {
+  content: "";
+}
+/* line 177, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li.twitter {
+  color: white;
+  background: #3596c9;
+}
+/* line 178, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li.twitter::before {
+  content: "";
+}
+/* line 182, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li.share {
+  color: white;
+  background-color: #0B242F;
+}
+/* line 185, style/section/_modal.scss */
+#infograph_application .infograph-modal #about .links li.share span.at4-icon.aticon-more {
+  display: inline-block;
+  margin-right: .5em;
+}
+/* line 194, style/section/_modal.scss */
+#infograph_application .infograph-modal #commenting {
+  height: 250px;
+}
+/* line 199, style/section/_modal.scss */
+#infograph_application .infograph-modal #contact h2 {
+  margin-bottom: .25em;
+}
+/* line 202, style/section/_modal.scss */
+#infograph_application .infograph-modal #contact em {
+  display: block;
+  margin-bottom: 1em;
+}
+/* line 206, style/section/_modal.scss */
+#infograph_application .infograph-modal #contact textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 211, style/section/_modal.scss */
+#infograph_application .infograph-modal #contact input[type="checkbox"] {
+  display: none;
+}
+/* line 215, style/section/_modal.scss */
+#infograph_application .infograph-modal #contact #notify + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #758794;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 1px 0 0;
+  vertical-align: text-top;
+}
+/* line 229, style/section/_modal.scss */
+#infograph_application .infograph-modal #contact input[type="text"] {
+  width: 31.5%;
+}
+/* line 231, style/section/_modal.scss */
+#infograph_application .infograph-modal #contact input[type="text"]:not(:first-of-type) {
+  margin-left: 2%;
+}
+/* line 235, style/section/_modal.scss */
+#infograph_application .infograph-modal #contact input[type="submit"] {
+  background: #0B242F;
+}
+/* line 23, style/style.scss */
+#infograph_application ul.skip-nav {
+  position: absolute;
+  left: -20000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* line 33, style/style.scss */
+#infograph_application #share-bar {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  color: #000;
+  height: 45px;
+  overflow: hidden;
+  position: fixed;
+  top: -45px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 100%;
+  z-index: -1;
+}
+/* line 52, style/style.scss */
+#infograph_application #share-bar.open {
+  z-index: 9999;
+  top: 0;
+}
+/* line 58, style/style.scss */
+#infograph_application #share-bar i {
+  font-size: 150%;
+  padding-right: 3px;
+  position: relative;
+  top: 5%;
+}
+/* line 63, style/style.scss */
+#infograph_application #share-bar i:before {
+  font-family: "FontAwesome";
+}
+/* line 68, style/style.scss */
+#infograph_application #share-bar .scrolltotop {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 73, style/style.scss */
+#infograph_application #share-bar ul.sharing {
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+}
+/* line 79, style/style.scss */
+#infograph_application #share-bar ul.sharing li {
+  font-size: 100%;
+  margin-left: 0;
+  display: inline-block;
+}
+/* line 83, style/style.scss */
+#infograph_application #share-bar ul.sharing li a {
+  color: #fff;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -ms-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  transition: background .5s ease;
+}
+/* line 97, style/style.scss */
+#infograph_application #share-bar ul.sharing li a span {
+  color: white;
+  font-family: "Bebas-Neue";
+  font-size: 16px;
+}
+/* line 105, style/style.scss */
+#infograph_application #share-bar ul.sharing li.facebook a {
+  background: #3b5998;
+}
+/* line 108, style/style.scss */
+#infograph_application #share-bar ul.sharing li.facebook i:before {
+  content: "\f087";
+}
+/* line 112, style/style.scss */
+#infograph_application #share-bar ul.sharing li.facebook a:hover {
+  background: #193a78;
+}
+/* line 116, style/style.scss */
+#infograph_application #share-bar ul.sharing li.twitter a {
+  background: #32a6ff;
+}
+/* line 119, style/style.scss */
+#infograph_application #share-bar ul.sharing li.twitter i:before {
+  content: "\f099";
+}
+/* line 123, style/style.scss */
+#infograph_application #share-bar ul.sharing li.twitter a:hover {
+  background: #1a94e1;
+}
+/* line 126, style/style.scss */
+#infograph_application #share-bar ul.sharing li.share-more a {
+  background: #f96b61;
+}
+/* line 129, style/style.scss */
+#infograph_application #share-bar ul.sharing li.share-more a:hover {
+  background: #eb6452;
+}
+@media screen and (max-width: 770px) {
+  /* line 73, style/style.scss */
+  #infograph_application #share-bar ul.sharing {
+    width: 64%;
+  }
+  /* line 136, style/style.scss */
+  #infograph_application #share-bar ul.sharing li {
+    width: 30%;
+    vertical-align: top;
+  }
+}
+/* line 146, style/style.scss */
+#infograph_application #infographic {
+  background: #0B242F;
+}
+/* line 148, style/style.scss */
+#infograph_application #infographic .feature-image img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+/* line 153, style/style.scss */
+#infograph_application #infographic img.animation {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 45%;
+  height: auto;
+}
+/* line 164, style/style.scss */
+#infograph_application #infographic small {
+  color: #708d99;
+  display: inline-block;
+  font-size: 95%;
+  margin: 2em 0 0;
+  max-width: 800px;
+  text-transform: none;
+}
+/* line 196, style/style.scss */
+#infograph_application #articles {
+  clear: right;
+  float: left;
+  min-width: 32%;
+  width: 32%;
+}
+/* line 202, style/style.scss */
+#infograph_application #articles h3 {
+  margin-bottom: 25px;
+}
+/* line 208, style/style.scss */
+#infograph_application #article h2 .date {
+  clear: left;
+  font-size: 75%;
+  display: block;
+}
+/* line 213, style/style.scss */
+#infograph_application #article h2 .date:before {
+  content: 'Posted: ';
+}
+/* line 221, style/style.scss */
+#infograph_application.wide #infographic {
+  margin: 0 0 50px;
+}
+/* line 224, style/style.scss */
+#infograph_application.wide .infographic {
+  min-width: 100%;
+  width: 100%;
+  margin: 0;
+}

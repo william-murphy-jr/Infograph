@@ -1,0 +1,3100 @@
+/*
+Theme Name: ReebootSQ
+Theme URI: http://ReebootSQ.org
+Author: William Murphy
+Author URI: http://
+Description: An info graphic with animation and user interaction
+Version: 1.0
+=======
+License: GNU General Public License
+License URI: license.txt
+*/
+
+/*
+==============================================
+Global Styles
+==============================================
+*/
+
+/*fonts*/
+	/*cassia*/
+@font-face {
+	font-family: 'Cassia-regular';
+	src: url('../assets/Fonts/Cassia-Regular.otf');
+	font-size: 16px; 
+}
+	/*din*/
+@font-face {
+	font-family: 'Dinpro';
+	src: url('../assets/Fonts/DIN_FONTS/DINPro-Black.otf');
+	font-size: 16px; 
+}
+@font-face {
+	font-family: 'Dinpro-bold';
+	src: url('../assets/Fonts/DIN_FONTS/DINPro-Bold.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Dinpro-light';
+	src: url('../assets/Fonts/DIN_FONTS/DINPro-Light.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Dinpro-regular';
+	src: url('../assets/Fonts/DIN_FONTS/DINPro-Regular.otf'); 
+	font-size: 16px;
+}
+
+	/*proxima*/
+@font-face {
+	font-family: 'Proxima-bold';
+	src: url('../assets/Fonts/Proxima Nova/ProximaNova-Bold.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-boldlt';
+	src: url('../assets/Fonts/Proxima Nova/ProximaNova-Boldlt.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-extrabold';
+	src: url('../assets/Fonts/Proxima Nova/ProximaNova-Extrabold.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-light';
+	src: url('../assets/Fonts/Proxima Nova/ProximaNova-Light.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-lightitalic';
+	src: url('../assets/Fonts/Proxima Nova/ProximaNova-Lightitalic.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-regitalic';
+	src: url('../assets/Fonts/Proxima_Nova/ProximaNova-RegItalic.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-regular';
+	src: url('../assets/Fonts/Proxima_Nova/ProximaNova-Regular.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-regularitalic';
+	src: url('../assets/Fonts/Proxima Nova/ProximaNova-RegularItalic.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-semibold';
+	src: url('../assets/Fonts/Proxima Nova/ProximaNova-Semibold.otf'); 
+	font-size: 16px;
+}
+@font-face {
+	font-family: 'Proxima-semibolditalic';
+	src: url('../assets/Fonts/Proxima Nova/ProximaNova-SemiboldItalic.otf'); 
+	font-size: 16px;
+}
+
+
+
+
+/* styles regarding infographic */
+.vac-infographic {
+	display: none;
+	font-family: Proxima-regular;
+	min-width: 375px;
+}
+.open {
+	display: block;
+}
+
+
+body {
+	overflow-x: hidden;
+	height: auto !important;
+	text-rendering: optimizeLegibility;
+}
+.vac-container {
+	background-color: rgb(79,151,255);
+	margin: 3px;
+	width: 99.5%;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+.vac-container * {
+	margin: 0;
+	padding: 0;
+}
+.vac-container a,
+.vac-container p {
+	text-decoration: none;
+}
+
+/* animation styles */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/* 
+   =================================================
+     Begining of Germ and Syringe Header Animation
+     in politics_of_vaccines.twig 
+   =================================================
+ */
+
+    /* ------------ 1 Germ ----------- */
+    @keyframes path_1 {
+        0% { 
+            transform: rotate(0deg) scale(1.5); 
+        }
+
+        100%   { 
+            left: 50%;
+            top: 15%;
+            transform: rotate(-360deg) scale(1.5); 
+        }
+    }
+
+    #header-elm_1 {
+        left: 10%;
+        top: 80%;
+        position: absolute;
+    }
+
+    #header-elm_1 {
+        animation: path_1 8999ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 2 Germ Blue Center ----------- */
+    @keyframes path_2 {
+        0% { 
+            transform: rotate(0deg) scale(2); 
+        }
+
+        100%   { 
+            left: 20%;
+            top: 120%;
+            transform: rotate(-360deg) scale(2); 
+        }
+    }
+
+    #header-elm_2 {
+        left: 130%;
+        top: 0%;
+        position: absolute;
+    }
+
+    #header-elm_2 {
+        animation: path_2 15900ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 3 Germ Blue Center ----------- */
+    @keyframes path_3 {
+        0% { 
+            transform: rotate(0deg) scale(2); 
+        }
+
+        100%   { 
+            left: 35%;
+            top: 10%;
+            transform: rotate(-360deg) scale(2); 
+        }
+    }
+
+    #header-elm_3 {
+        left: 15%;
+        top: 50%;
+        position: absolute;
+    }
+
+    #header-elm_3 {
+        animation: path_3 14000ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 4 germ-blue-center ----------- */
+    @keyframes path_4 {
+        0% { 
+            transform: rotate(0deg) scale(.75); 
+        }
+
+        100%   { 
+            left: 55%;
+            top: 55%;
+            transform: rotate(360deg) scale(2); 
+        }
+    }
+    #header-elm_4 {
+        left: 5%;
+        top: 15%;
+        position: absolute;
+    }
+
+    #header-elm_4 {
+        animation: path_4 9400ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 5 Germ Blue Center ----------- */
+    @keyframes path_5 {
+        0% { 
+            opacity: .25;
+            transform: rotate(0deg) scale(1.5); 
+        }
+
+        40% { 
+            opacity: .8;
+            transform:  rotate(180deg) scale(.20); 
+        }
+
+        100%   { 
+            opacity: .25;
+            left: 15%;
+            top: 15%;
+            transform: rotate(360deg) scale(1.5); 
+        }
+    }
+
+    #header-elm_5 {
+        left: 20%;
+        top: 85%;
+        position: absolute;
+    }
+
+    #header-elm_5 {
+        animation: path_5 15750ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 6 Germ Color ----------- */
+    @keyframes path_6 {
+        0% { 
+            opacity: 0.5;
+            transform: rotate(0deg) scale(1.0); 
+        }
+
+        100%   { 
+            opacity: 0.8;
+            left: -5%;
+            top: 75%;
+            transform: rotate(360deg) scale(0.75); 
+        }
+    }
+
+    #header-elm_6 {
+        left: 100%;
+        top: 30%;
+        position: absolute;
+    }
+
+    #header-elm_6 {
+        animation: path_6 11500ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 7 Germ Color----------- */
+    @keyframes path_7 {
+        0% { 
+            opacity: 0.5;
+            transform: rotate(0deg) scale(.75); 
+        }
+
+        100%   { 
+            opacity: 1.0;
+            left: 50%;
+            top: -10%;
+            transform: rotate(360deg) scale(3); 
+        }
+    }
+
+    #header-elm_7 {
+        left: 70%;
+        top: 98%;
+        position: absolute;
+    }
+
+    #header-elm_7 {
+        animation: path_7 12333ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 8  Germ Color ----------- */
+    @keyframes path_8 {
+        0% { 
+            transform: rotate(0deg) scale(1); 
+        }
+
+        100%   { 
+            opacity: 0;
+            left: 50%;
+            top: 0%;
+            transform: rotate(360deg) scale(.25); 
+        }
+    }
+
+    #header-elm_8 {
+        left: 90%;
+        top: 95%;
+        position: absolute;
+    }
+
+    #header-elm_8 {
+        animation: path_8 8667ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 9  Germ Color ----------- */
+    @keyframes path_9 {
+        0% { 
+            opacity: 1;
+            transform: rotate(0deg) scale(1.5); 
+        }
+
+        100%   { 
+            opacity: 1;
+            left: 50%;
+            top: 40%;
+            transform: rotate(360deg) scale(.1); 
+        }
+    }
+
+    #header-elm_9 {
+        left: 40%;
+        top: 40%;
+        position: absolute;
+    }
+
+    #header-elm_9 {
+        animation: path_9 5667ms ease-in-out infinite alternate;
+    }
+
+
+    /* ------------ 10  Germ Color ----------- */
+    @keyframes path_10 {
+        0% { 
+            opacity: 0.4;
+            transform: rotate(0deg) scale(.5); 
+        }
+
+        100%   { 
+            opacity: 0;
+            left: 0%;
+            top: 80%;
+            transform: rotate(360deg) scale(.5); 
+        }
+    }
+
+    #header-elm_10 {
+        left: 25%;
+        top: 70%;
+        position: absolute;
+    }
+
+    #header-elm_10 {
+        animation: path_10 8500ms ease-in-out infinite alternate;
+    }
+
+
+    /*
+     ***** Germ Microbes Animation *****
+     */
+
+    /* Animate Left & Right Tail on germ Microbe body */
+        @keyframes right_x5F_tail {
+            0% { 
+                transform: rotate(2.5deg); 
+            }
+
+            100%   { 
+                transform: rotate(-2.5deg);
+            }
+        }
+
+        @keyframes left_x5F_tail {
+            0% { 
+                transform: rotate(2.5deg); 
+            }
+
+            100%   { 
+                transform: rotate(-2.5deg);
+            }
+        }
+
+        #right_x5F_tail {
+            animation: right_x5F_tail 1211ms ease-in-out infinite alternate;
+        }
+
+        #left_x5F_tail {
+            animation: left_x5F_tail 1103ms ease-in-out infinite alternate;
+        }
+
+        /* Animate Hairs on Germ Microbe body */
+        @keyframes hair_x5F {
+            0% { 
+                transform: rotate(2.5deg) scale(1.10); 
+            }
+
+            100%   { 
+                transform: rotate(-2.5deg) scale(1.10);
+            }
+        }
+
+        #hair_x5F_one {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_two {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_three {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_four {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_five {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_six {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_seven {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_eight {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_nine {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_ten {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_eleven {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_twele {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_thirteen {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_fouteen {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_fifteen {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_sixteen {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+        #hair_x5F_seventeen {
+            animation: hair_x5F 500ms ease-in-out infinite alternate;
+        }
+
+
+    /* ------------ 11 Animated germ Microbe body----------- */
+    @keyframes path_11 {
+        0% { 
+            opacity: 0;
+            transform: rotate(0deg) scale(2.0); 
+        }
+        12% {
+            transform: rotate(-10deg) scale(1.75);
+        }
+        25% {
+            transform: rotate(-10deg) scale(1.5);
+        }
+        37% {
+            transform: rotate(-10deg) scale(1.25);
+        }
+        50% {
+            left: 95%;
+            top: -8%;
+            opacity: 1;
+            transform: rotate(180deg) scale(1.0);
+        }
+        62% {
+            transform: rotate(170deg) scale(1.2);
+        }
+
+        75% {
+            transform: rotate(190deg) scale(1.6);
+        }
+        87% {
+            transform: rotate(170deg) scale(1.8);
+        }
+        100% { 
+            opacity: 0;
+            left: 65%;
+            top: 85%;
+            transform: rotate(180deg) scale(2); 
+        }
+    }
+
+    #header-elm_11 {
+        left: 65%;
+        top: 85%;
+        position: absolute;
+    }
+
+    #header-elm_11 {
+        animation: path_11 16533ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 12  animated germ Microbe ----------- */
+    @keyframes path_12 {
+        0% { 
+            opacity: 0;
+            transform: rotate(50deg) scale(2.0); 
+        }
+        12% {
+            transform: rotate(25deg) scale(1.75);
+        }
+        25% {
+            transform: rotate(75deg) scale(1.50);
+        }
+        37% {
+            transform: rotate(25deg) scale(1.25);
+        }
+        50% {
+            left: 120%;
+            top: 0%;
+            opacity: 1;
+            transform: rotate(-130deg) scale(1.0);
+        }
+        62% {
+            transform: rotate(-105deg) scale(1.25);
+        }
+
+        75% {
+            transform: rotate(-155deg) scale(1.50);
+        }
+        87% {
+            transform: rotate(-105deg) scale(1.25);
+        }
+        100% { 
+            opacity: 1;
+            left: -10%;
+            top: 90%;
+            transform: rotate(180deg) scale(1.0); 
+        }
+    }
+
+    #header-elm_12 {
+        left: -10%;
+        top: 90%;
+        position: absolute;
+    }
+
+    #header-elm_12 {
+        animation: path_12 40s ease-in-out infinite;
+    }
+
+
+    /* ------------ 13 animated germ Microbe ----------- */
+    @keyframes path_13 {
+        0% { 
+            opacity: 0;
+            transform: rotate(0deg) scale(3.0); 
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(10deg) scale(2.5);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(-10deg) scale(2.0);
+        }
+        37% {
+            opacity: .5;
+            transform: rotate(10deg) scale(1.50);
+        }
+        50% {
+            left: 45%;
+            top: 0%;
+            opacity: 0;
+            transform: rotate(-180deg) scale(1.0);
+        }
+        62% {
+            opacity: .5;
+            transform: rotate(-170deg) scale(1.5);
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(-190deg) scale(2.0);
+        }
+        87% {
+            opacity: .5;
+            transform: rotate(-170deg) scale(2.5);
+        }
+        100% { 
+            opacity: 0;
+            left: 45%;
+            top: 100%;
+            transform: rotate(180deg) scale(3.0); 
+        }
+    }
+
+    #header-elm_13 {
+        transform: scale(3.0);
+        left: 45%;
+        top: 100%;
+        position: absolute;
+    }
+
+    #header-elm_13 {
+        animation: path_13 25000ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 14 animated germ Microbe ----------- */
+    @keyframes path_14 {
+        0% { 
+            opacity: 0;
+            transform: rotate(170deg) scale(3.0); 
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(180deg) scale(2.5);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(160deg) scale(2.0);
+        }
+        37% {
+            opacity: .5;
+            transform: rotate(180deg) scale(1.50);
+        }
+        50% {
+            left: 65%;
+            top: 115%;
+            opacity: 0;
+            transform: rotate(-10deg) scale(1.0);
+        }
+        62% {
+            opacity: .5;
+            transform: rotate(10deg) scale(1.5);
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(-10deg) scale(2.0);
+        }
+        87% {
+            opacity: .5;
+            transform: rotate(10deg) scale(2.5);
+        }
+        100% { 
+            opacity: 0;
+            left: 65%;
+            top: -25%;
+            transform: rotate(170deg) scale(3.0); 
+        }
+    }
+
+    #header-elm_14 {
+        left: 65%;
+        top: -15%;
+        position: absolute;
+    }
+
+    #header-elm_14 {
+        animation: path_14 20111ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 15 animated germ Microbe ----------- */
+    @keyframes path_15 {
+        0% { 
+            opacity: 0;
+            transform: rotate(90deg) scale(3.0); 
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(70deg) scale(2.5);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(90deg) scale(2.0);
+        }
+        37% {
+            opacity: .5;
+            transform: rotate(70deg) scale(1.50);
+        }
+        50% {
+            left: 120%;
+            top: 20%;
+            opacity: 0;
+            transform: rotate(-100deg) scale(1.0);
+        }
+        62% {
+            opacity: .5;
+            transform: rotate(-120deg) scale(1.5);
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(-100deg) scale(2.0);
+        }
+        87% {
+            opacity: .5;
+            transform: rotate(-110deg) scale(2.5);
+        }
+        100% { 
+            opacity: 0;
+            left: 25%;
+            top: 20%;
+            transform: rotate(-100deg) scale(3.0); 
+        }
+    }
+
+    #header-elm_15 {
+        left: 25%;
+        top: 20%;
+        position: absolute;
+    }
+
+    #header-elm_15 {
+        animation: path_15 21777ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 16 animated germ Microbe ----------- */
+    @keyframes path_16 {
+        0% { 
+            opacity: 0;
+            transform: rotate(-90deg) scale(3.0); 
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(-120deg) scale(2.5);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(-90deg) scale(2.0);
+        }
+        37% {
+            opacity: .5;
+            transform: rotate(-120deg) scale(1.50);
+        }
+        50% {
+            left: -10%;
+            top: 40%;
+            opacity: 0;
+            transform: rotate(-90deg) scale(1.0);
+        }
+        62% {
+            opacity: .5;
+            transform: rotate(90deg) scale(1.5);
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(60deg) scale(2.0);
+        }
+        87% {
+            opacity: .5;
+            transform: rotate(90deg) scale(2.5);
+        }
+        100% { 
+            opacity: 0;
+            left: 65%;
+            top: 40%;
+            transform: rotate(60deg) scale(3.0); 
+        }
+    }
+
+    #header-elm_16 {
+        left: 65%;
+        top: 40%;
+        position: absolute;
+    }
+
+    #header-elm_16 {
+        animation: path_16 20330ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 17 animated germ Microbe ----------- */
+    @keyframes path_17 {
+        0% { 
+            opacity: 0;
+            transform: rotate(-90deg) scale(3.0);  /* center */
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(-80deg) scale(2.5);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(-100deg) scale(2.0);
+        }
+        37% {
+            opacity: .5;
+            transform: rotate(-80deg) scale(1.50);
+        }
+        50% {
+            left: -10%;
+            top: 20%;
+            opacity: 0;
+            transform: rotate(-100deg) scale(1.0);
+        }
+        62% {
+            opacity: .5;
+            transform: rotate(105deg) scale(1.5);
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(85deg) scale(2.0);
+        }
+        87% {
+            opacity: .5;
+            transform: rotate(105deg) scale(2.5);
+        }
+        100% { 
+            opacity: 0;
+            left: 15%;
+            top: 50%;
+            transform: rotate(85deg) scale(3.0); 
+        }
+    }
+
+
+    #header-elm_17 {
+        left: 15%;
+        top: 50%;
+        position: absolute;
+    }
+
+    #header-elm_17 {
+        animation: path_17 9133ms ease-in-out infinite;
+    }
+
+    /* ------------ 18 animated germ Microbe ----------- */
+    @keyframes path_18 {
+        0% { 
+            opacity: 1;
+            transform: rotate(60deg) scale(3.0);  /* center */
+        }
+        6% {
+            opacity: .8;
+            transform: rotate(40deg) scale(2.5);
+        }
+        12% {
+            opacity: .6;
+            transform: rotate(70deg) scale(1.5);
+        }
+        18% {
+            opacity: .4;
+            transform: rotate(40deg) scale(1);
+        }
+        25% {
+            left: 65%;
+            top: 25%;
+            opacity: 0;
+            transform: rotate(95deg) scale(.25); /* Midpoint */
+        }
+        31% {
+            opacity: .4;
+            transform: rotate(85deg) scale(1);
+        }
+
+        37% {
+            opacity:.6;
+            transform: rotate(105deg) scale(1.5);
+        }
+        43% {
+            opacity: .8;
+            transform: rotate(85deg) scale(2.5);
+        }
+        50% { 
+            opacity: 1;
+            left: 108%;
+            top: 70%;
+            transform: rotate(95deg) scale(3.0); 
+        }
+        53% { 
+            opacity: 1;
+            transform: rotate(-80deg) scale(3.0);  /* center & reverse point */
+        }
+        56% {
+            opacity: .8;
+            transform: rotate(-70deg) scale(2.5);
+        }
+        62% {
+            opacity: .6;
+            transform: rotate(-90deg) scale(1.5);
+        }
+        68% {
+            opacity: .4;
+            transform: rotate(-70deg) scale(1);
+        }
+        75% {
+            left: 60%;
+            top: 15%;
+            opacity: 0;
+            transform: rotate(-90deg) scale(.25);  /* Midpoint No. 2 */ 
+        }
+        81% {
+            opacity: .4;
+            transform: rotate(-105deg) scale(1);
+        }
+
+        87% {
+            opacity: .6;
+            transform: rotate(-125deg) scale(1.5);
+        }
+        93% {
+            opacity: .8;
+            transform: rotate(-105deg) scale(2.5);
+        }
+        100% { 
+            opacity: 0;
+            left: -5%;
+            top: 50%;
+            transform: rotate(-125deg) scale(3.0); 
+        }
+    }
+
+    #header-elm_18 {
+        left: -5%;
+        top: 50%;
+        position: absolute;
+    }
+
+    #header-elm_18 {
+        animation: path_18 39133ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 19 animated germ Microbe ----------- */
+    @keyframes path_19 {
+        0% { 
+            opacity: 0;
+            transform: rotate(-125deg) scale(3.0);  /* center */
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(-115deg) scale(2.5);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(-135deg) scale(2.0);
+        }
+        37% {
+            opacity: .5;
+            transform: rotate(-115deg) scale(1.50);
+        }
+        50% {
+            left: -20%;
+            top: 120%;
+            opacity: 0;
+            transform: rotate(-125deg) scale(1.0);
+        }
+        62% {
+            opacity: .5;
+            transform: rotate(60deg) scale(1.5);
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(80deg) scale(2.0);
+        }
+        87% {
+            opacity: .5;
+            transform: rotate(00deg) scale(2.5);
+        }
+        100% { 
+            opacity: 0;
+            left: 62%;
+            top: 60%;
+            transform: rotate(80deg) scale(3.0); 
+        }
+    }
+
+    #header-elm_19 {
+        left: 62%;
+        top: 60%;
+        position: absolute;
+    }
+
+    #header-elm_19 {
+        animation: path_19 17173ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 20 animated germ Microbe ----------- */
+    @keyframes path_20 {
+        0% { 
+            opacity: 0;
+            transform: rotate(-85deg) scale(3.0);  /* center */
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(-75deg) scale(2.5);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(-95deg) scale(2.0);
+        }
+        37% {
+            opacity: .5;
+            transform: rotate(-75deg) scale(1.50);
+        }
+        50% {
+            left: -20%;
+            top: 60%;
+            opacity: 0;
+            transform: rotate(-85deg) scale(1.0);
+        }
+        62% {
+            opacity: .5;
+            transform: rotate(90deg) scale(1.5);  /* center */
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(100deg) scale(2.0);
+        }
+        87% {
+            opacity: .5;
+            transform: rotate(80deg) scale(2.5);
+        }
+        100% { 
+            opacity: 0;
+            left: 57%;
+            top: 85%;
+            transform: rotate(100deg) scale(3.0); 
+        }
+    }
+
+
+    #header-elm_20 {
+        left: 57%;
+        top: 85%;
+        position: absolute;
+    }
+
+    #header-elm_20 {
+        animation: path_20 20173ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 21 animated orange-syringe ----------- */
+    @keyframes path_21 {
+        0% { 
+            transform: rotate(180deg) scale(2.75);  /* center */
+        }
+        12% {
+            transform: rotate(180deg) scale(2.75);
+        }
+        25% {
+            transform: rotate(180deg) scale(2.75);
+        }
+        37% {
+            transform: rotate(180deg) scale(2.75);
+        }
+        50% {
+            left: 115%;
+            top: 30%;
+            transform: rotate(180deg) scale(2.75);
+        }
+        62% {
+            transform: rotate(0deg) scale(2.75);  /* center */
+        }
+
+        75% {
+            transform: rotate(0deg) scale(2.75);
+        }
+        87% {
+            transform: rotate(0deg) scale(2.75);
+        }
+        100% { 
+            left: -15%;
+            top: 22%;
+            transform: rotate(0deg) scale(2.75); 
+        }
+    }
+
+    #header-elm_21 {
+        left: -15%;
+        top: 22%;
+        position: absolute;
+    }
+
+    #header-elm_21 {
+        animation: path_21 35173ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 22 animated orange-syringe ----------- */
+    @keyframes path_22 {
+        0% { 
+            transform: rotate(180deg) scale(1.2);  /* center */
+        }
+        12% {
+            transform: rotate(180deg) scale(1.2);
+        }
+        25% {
+            transform: rotate(180deg) scale(1.2);
+        }
+        37% {
+            transform: rotate(180deg) scale(1.2);
+        }
+        50% {
+            left: 120%;
+            top: 105%;
+            transform: rotate(180deg) scale(1.2);
+        }
+        62% {7
+            transform: rotate(0deg) scale(1.75);  /* center */
+        }
+
+        75% {
+            transform: rotate(0deg) scale(1.75);
+        }
+        87% {
+            transform: rotate(0deg) scale(1.75);
+        }
+        100% { 
+            left: -10%;
+            top: 75%;
+            transform: rotate(0deg) scale(1.75); 
+        }
+    }
+
+    #header-elm_22 {
+        left: -10%;
+        top: 75%;
+        position: absolute;
+    }
+
+    #header-elm_22 {
+        animation: path_22 25173ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 23 animated orange-syringe ----------- */
+    @keyframes path_23 {
+        0% { 
+            transform: rotate(180deg) scale(1.2);  /* center */
+        }
+        12% {
+            transform:  rotate(180deg)  scale(1.2);
+        }
+        25% {
+            transform:  rotate(180deg)  scale(1.2);
+        }
+        37% {
+            transform:  rotate(180deg)  scale(1.2);
+        }
+        50% {
+            left: 105%;
+            top: 35%;
+            transform:  rotate(180deg)  scale(1.2);
+        }
+        62% {
+            transform:  rotate(0deg)  scale(1.2);  /* center */
+        }
+
+        75% {
+            transform:  rotate(0deg)  scale(1.2);
+        }
+        87% {
+            transform:  rotate(0deg)  scale(1.2);
+        }
+        100% { 
+            left: 40%;
+            top: -8%;
+            transform: rotate(0deg) scale(1.2); 
+        }
+    }
+
+    #header-elm_23 {
+        left: 40%;
+        top: -8%;
+        position: absolute;
+    }
+
+    #header-elm_23 {
+        animation: path_23 18173ms ease-in-out infinite;
+    }    
+
+
+    /* ------------ 24 animated orange-syringe ----------- */
+    @keyframes path_24 {
+        0% { 
+            opacity: 0;
+            transform: rotate(0deg) scale(1.0);  /* center */
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(0deg) scale(1.0);
+        }
+        25% {
+            opacity: .75;
+            transform: rotate(0deg) scale(1.0);
+        }
+        37% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.0);
+        }
+        50% {
+            opacity: 1;
+            left: -10%;
+            top: 10%;
+            transform: rotate(0deg) scale(1.0);
+        }
+        62% {
+            opacity: 1;
+            transform: rotate(180deg) scale(0.75);  /* center */
+        }
+
+        75% {
+            opacity: .5;
+            transform: rotate(180deg) scale(0.75);
+        }
+        87% {    
+            opacity: 0.25;
+            transform: rotate(180deg) scale(0.75);
+        }
+        100% { 
+            left: 50%;
+            top: 10%;
+            opacity: 0;
+            transform: rotate(180deg) scale(0.75); 
+        }
+    }
+
+    #header-elm_24 {
+        left: 50%;
+        top: 10%;
+        position: absolute;
+    }
+
+    #header-elm_24 {
+        animation: path_24 25173ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 25 animated orange-syringe ----------- */
+    @keyframes path_25 {
+        0% { 
+            opacity: 0;
+            transform: rotate(0deg) scale(1.25);  /* center */
+        }
+        12% {
+            opacity: .5;
+            transform: rotate(0deg) scale(1.25);
+        }
+        25% {
+            opacity: .75;
+            transform: rotate(0deg) scale(1.25);
+        }
+        37% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.25);
+        }
+        50% {
+            opacity: 1;
+            left: -10%;
+            top: 75%;
+            transform: rotate(0deg) scale(1.25);
+        }
+        62% {
+            opacity: 1;
+            transform: rotate(180deg) scale(1.25);  /* center */
+        }
+
+        75% {
+            opacity: .5;
+            transform: rotate(180deg) scale(1.25);
+        }
+        87% {    
+            opacity: 0.25;
+            transform: rotate(180deg) scale(1.25);
+        }
+        100% { 
+            left: 85%;
+            top: 15%;
+            opacity: 0;
+            transform: rotate(180deg) scale(1.25); 
+        }
+    }
+
+    #header-elm_25 {
+        left: 85%;
+        top: 15%;
+        position: absolute;
+    }
+
+    #header-elm_25 {
+        animation: path_25 25173ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 26 animated orange-syringe ----------- */
+    @keyframes path_26 {
+        0% { 
+            opacity: 1;
+            transform: rotate(0deg) scale(1.25);  /* center */
+        }
+        12% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.25);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.25);
+        }
+        37% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.25);
+        }
+        50% {
+            opacity: 1;
+            left: -10%;
+            top: 100%;
+            transform: rotate(0deg) scale(1.25);
+        }
+        62% {
+            opacity: 1;
+            transform: rotate(180deg) scale(1.25);  /* center */
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(180deg) scale(1.25);
+        }
+        87% {    
+            opacity: 1;
+            transform: rotate(180deg) scale(1.25);
+        }
+        100% { 
+            left: 105%;
+            top: 70%;
+            opacity: 0;
+            transform: rotate(180deg) scale(1.25); 
+        }
+    }
+
+    #header-elm_26 {
+        left: 105%;
+        top: 70%;
+        position: absolute;
+    }
+
+    #header-elm_26 {
+        animation: path_26 27173ms ease-in-out infinite;
+    }
+
+
+    /* ------------ 27 animated orange-syringe ----------- */
+    @keyframes path_27 {
+        0% { 
+            opacity: 0;
+            transform: rotate(0deg) scale(1.4);  /* center */
+        }
+        12% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.4);
+        }
+        25% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.4);
+        }
+        37% {
+            opacity: 1;
+            transform: rotate(0deg) scale(1.4);
+        }
+        50% {
+            opacity: 1;
+            left: 120%;
+            top: 55%;
+            transform: rotate(0deg) scale(1.4);
+        }
+        62% {
+            opacity: 0;
+            transform: rotate(180deg) scale(1.4);  /* center */
+        }
+
+        75% {
+            opacity: 1;
+            transform: rotate(180deg) scale(1.4);
+        }
+        87% {    
+            opacity: 1;
+            transform: rotate(180deg) scale(1.4);
+        }
+        100% { 
+            left: 70%;
+            top: 55%;
+            opacity: 0;
+            transform: rotate(180deg) scale(1.4); 
+        }
+    }
+
+    #header-elm_27 {
+        left: 70%;
+        top: 55%;
+        position: absolute;
+    }
+
+    #header-elm_27 {
+        animation: path_27 30373ms ease-in-out infinite;
+    }
+
+/* 
+   =================================================
+       End of Germ and Syringe Header Animation 
+   =================================================
+ */
+
+
+
+/*temporary styles for layout*/
+.box-size {
+	height: 200px;
+}
+
+/* generic classes that apply throughout doc */
+.font-xsmall {
+	font-size: 12px;
+}
+.font-small {
+	font-size: 18px;
+}
+.font-medium {
+	font-size: 20px;
+}
+.font-large {
+	font-size: 28px;
+}
+.font-xlarge {
+	font-size: 36px;
+}
+.font-white {
+	color: rgb(225,225,225);
+}
+.font-dark-blue {
+	color: #192229;
+}
+.font-dark-gray {
+	color: #808285
+}
+.font-light-blue {
+	color: #2196f3;
+}
+
+.title-block {
+	padding-bottom: 4rem;
+	text-align: center;
+}
+.title {
+	padding-top: 80px;
+	padding-bottom: 1rem;
+	font-family: Dinpro-regular;
+	line-height: 1.25em;
+}
+.title-p {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.8rem;
+	font-family: Proxima-regular;
+}
+.text-center {
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+#infographic {
+	position: relative;
+}
+
+/*
+==============================================
+Header Section
+==============================================
+*/
+.header-section {
+	background-color: #3F8CE9;
+	height: auto;
+	transition: height 1s 1s ease;
+}
+.header-section .overlay {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1000000;
+	background: rgb(0,0,0);
+	opacity: .65;
+	transition: opacity 1s ease-in;
+}
+.header-section .overlay.open {
+	opacity: 0;
+}
+.header-section #vac-banner {
+	width: 100%;
+	height: 100%;
+	min-height: 40vh;
+}
+@media (max-width: 600px) {
+	.header-section #vac-banner {
+		min-height: 40vh;
+	}
+}
+.header-section .tagline {
+	position: absolute;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	transform: scale(.7);
+}
+.header-section .tagline.fixed {
+	position: fixed;
+}
+.header-section .tagline .headline {
+	font-family: Dinpro-bold;	
+	font-size: 64px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 1.2em;
+}
+.header-section .tagline p {
+	font-size: 36px;
+	font-family: Dinpro-regular;
+	margin-top: 30px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header-section .headline-vs {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50px;
+	height: 50px;
+	line-height: 42px;
+	border-radius: 45px;
+	background: #192229;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+@media (max-width: 800px) {
+	.header-section .tagline {
+		opacity: 1 !important;
+		top: calc(50% - 11em);
+	}
+	.header-section .scroll-canvas svg {
+		transform: scale(.85) !important;
+	}
+	.header-section .headline {
+		font-size: 50px;
+	}
+	.header-section .headline-p {
+		font-size: 36px;
+	}
+}
+@media (max-width: 500px) {
+	.header-section .tagline {
+		top: calc(50% - 8em);
+	}
+} 
+@media (max-width: 375px) {
+	.header-section .tagline {
+		width: 330px;
+		opacity: 1;
+	}
+	.tagline .headline {
+		font-size: 36px !important;
+	}
+	.header-section .tagline p {
+		font-size: 24px !important;
+		width: 330px;
+	}
+}
+
+/*
+==============================================
+Sidebar Section
+==============================================
+*/
+#recommended-articles h4 {
+    line-height: 1.1;
+}
+
+/*
+==============================================
+Mobil Graph Section
+==============================================
+*/
+.mobile-row {
+	position: relative;
+	/*margin-bottom: .6rem;*/
+	z-index: 100;
+}
+div.mobile > p {
+	padding-top: 50px;
+	color: #808285;
+	font-size: .8em;
+}
+div.mobile .graph-name {
+	font-family: Dinpro-bold;
+    font-size: 30px;
+    color: #2196f3;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-transform: none 
+}
+div.mobile .disease-items {
+	font-family: Proxima-regular;
+	font-size: 13px;
+	color: #808285;
+}
+/*slider*/
+.nav-buttons {
+	position: relative;
+	z-index: 200;
+	cursor: pointer;
+}
+#left-mobile-select {
+	position: absolute;
+	left: 10%;
+	top: -10px;
+}
+#right-mobile-select {
+	position: absolute;
+    right: 10%;
+    top: -10px;
+}
+
+.slide-buttons {
+	position: absolute;
+	top: 10px;
+	z-index: 200;
+}
+.nav-buttons {
+	position: relative;
+	z-index: 200;
+	cursor: pointer;
+}
+#left-mobile-select {
+	position: absolute;
+	left: 5%;
+	top: -10px;
+}
+#right-mobile-select {
+	position: absolute;
+    right: 5%;
+    top: -10px;
+}
+
+.slide-viewer {
+	position: relative;
+	overflow: hidden;
+	height: 50px;
+}
+.left-mobile-select-bg {
+	position: absolute;
+	left: calc(5% + 7px);
+	top: -3px;
+	background: #2196f3;
+	width: 29px;
+	height: 25px;
+	border-radius: 50px;
+}
+.right-mobile-select-bg {
+	position: absolute;
+	right: calc(5% + 7px);
+	top: -3px;
+	background: #2196f3;
+	width: 29px;
+	height: 25px;
+	border-radius: 50px;
+}
+.slide-group {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.slide {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+}
+.slide:first-child {
+	display: block;
+}
+.top-graph {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	background-color: #192229;
+	height: 950px;
+}
+.bottom-graph {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	background-color: #20292f;
+	height: 950px;
+}
+svg.board-six {
+	position: absolute;
+	left: 0px;
+	top: 45%;
+    width: 100%;
+	height: 100%;
+}
+svg.board-five {
+	position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    bottom: -45%;
+}
+.board-five-mobile {
+	position: absolute;
+	height: 100%;
+	width: 1300px;
+	top: 350px;
+	left: -53%;
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+			transform: rotate(90deg);
+}
+.board-six-mobile {
+	position: absolute;
+	height: 100%;
+	width: 1300px;
+	bottom: -335px;
+	left: -53%;
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+			transform: rotate(90deg);
+}
+.tooltip-mobile {
+	-webkit-transform: rotate(-90deg);
+	   -moz-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	     -o-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+}
+.vs-mobile {
+	position: absolute;
+    top: 913px;
+    right: 43%;
+	width: 75px;
+	height: 75px;
+	border: 1px solid #414042;
+	border-radius: 50%;
+	background-color: #192229;
+	z-index: 25;
+}
+.vs-mobile > span {
+	position: absolute;
+	top: 27px;
+	left: 26px;
+	color: #58595B;
+}
+.complications-mobile {
+	color: #808285;
+	position: absolute;
+	bottom: 105px;
+	right: 30px;
+}
+.complications-image-mobile {
+	 margin-top: 0px;
+	 margin-bottom: -5px;
+	 padding-right: -80px;
+	 margin-right: 5px; 
+	 display: inline-block;
+	 width: 20px;
+}
+.complications-mobile span:nth-of-type(1) {
+	color: #E44046;
+	margin: 9px 7px;
+}
+.complications-mobile span:nth-of-type(2) {
+	color: #d98c51;
+	margin: 7px 7px;
+}
+.complications-mobile span:nth-of-type(3) {
+	color: #DFC83F;
+	margin: 7px 7px;
+}
+.horizontal-line {
+	height: 5px;
+	width: 90%;
+	margin-left: 5%;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 94px;
+	border-bottom: 1px solid #808285;
+}
+.source-mobile {
+	text-align: left;
+	padding-left: 20px;
+	color: #808285;
+	position: absolute;
+	bottom: 4em;
+}
+.source-mobile h4 {
+	display: inline-block;
+}
+.mobile {
+	margin-top: 2px;
+}
+.tooltip-text {
+	margin-top: 5px;
+}
+.tooltip-text > span.man-icon {
+	display: inline-block;
+}
+.tooltip-text > span.value {
+	margin-left: 7px;
+}
+.mobile-nav {
+	margin: 0px 10px 0px 10px;
+}
+.board-five-mobile  .mobile-triangle-border.left:after {
+	border-color: transparent #192229;
+}
+.mobile-triangle-border {
+  position:relative;
+  padding: 10px 10px 10px 10px;
+  margin: 1em 0 3em;
+  border: 1px solid #6f6c71;
+  width: 150px;
+  height: auto;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  -o-border-radius: 4px;
+  border-radius:4px;
+  text-align: left;
+}
+.mobile-triangle-border:before {
+  content:"";
+  position:absolute;
+  bottom:-20px; /* value = - border-top-width - border-bottom-width */
+  left:40px; /* controls horizontal position */
+  border-width:20px 20px 0;
+  border-style:solid;
+  border-color: #6f6c71 transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+/* creates the smaller  triangle */
+.mobile-triangle-border:after {
+  content:"";
+  position:absolute;
+  bottom:-13px; /* value = - border-top-width - border-bottom-width */
+  left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+  border-width:13px 13px 0;
+  border-style:solid;
+  border-color:#fff transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+/* creates the larger triangle */
+.mobile-triangle-border.left:before {
+    top: calc(50% - 13px);
+    bottom: auto;
+    left: -25px;
+    border-width: 13px 26px 13px 0;
+    border-color: transparent #6f6c71;
+}
+
+/* creates the smaller  triangle */
+.mobile-triangle-border.left:after {
+	top: calc(50% - 13px); /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom:auto;
+	left:-23px; /* value = - border-left-width - border-right-width */
+	border-width:13px 26px 13px 0;
+	border-color: transparent #20292F ;
+	z-index: 20;
+}
+.tooltip:hover {
+	/*transform: scale(1.2);*/
+	z-index: 1000;
+}
+.vaccine-type {
+	font-family: Proxima-regular;
+    font-size: 13px;
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+    color: #2196f3;
+    position: relative;
+}
+.show {
+	display: inline;
+}
+.hide {
+	display: hidden;
+}
+@-webkit-keyframes mobile-animate {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+@-moz-keyframes mobile-animate {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+@-o-keyframes mobile-animate {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+@keyframes mobile-animate {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+/*.tooltip-mobile {
+	animation-name: mobile-animate;
+       -moz-animation-name: mobile-animate;
+	     -o-animation-name: mobile-animate;
+	        animation-name: mobile-animate;
+
+	-webkit-animation-duration: 5s;
+	   -moz-animation-duration: 5s;
+	     -o-animation-duration: 5s;
+	        animation-duration: 5s;
+}
+*/
+@media (max-width: 400px) {
+	.board-five-mobile,
+	.board-six-mobile {
+    	left: -87%;
+	}
+}
+
+/*
+============================================== 
+Graph Section
+==============================================
+*/
+.graph-container {
+	background: rgb(88,89,91);
+	position: relative;
+	z-index: 100;
+}
+.row-one {
+	position: relative;
+	margin-bottom: .6rem;
+}
+.vac-row {
+	position: relative;
+	display: flex;
+	z-index: 100;
+}
+.graph-container .left-graph {
+	border-right: 1px solid rgba(80,82,85,.5);
+}
+.graph-container .board-header {
+	position: relative;
+	height: 11em;
+}
+.graph-container .board-container {
+	position: relative;
+	height: 100%;
+	z-index: 100;
+}
+.graph-container .board-footer {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	top: -9em;
+}
+.board-header p {
+	color: #808285;
+	font-family: Dinpro-regular;
+	font-size: 12px;
+}
+.board-svg {
+	position: relative;
+	height: 500px;
+	width: 100%;
+	/*bottom: 200px;*/
+	z-index: 100;
+}
+div.graph {
+	height: 900px;
+	text-align: center;
+	flex: 1;
+	position: relative;
+	padding-bottom: 185px;
+	padding-top: 55px;
+}
+div.graph > p {
+	color: #808285;
+	font-size: .8em;
+}
+div.graph .graph-name {
+	font-family: Dinpro-bold;
+	font-size: 30px;
+	color: #2196f3;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	text-transform: none !important;
+}
+div.graph .disease-items {
+	font-family: Proxima-regular;
+	font-size: 13px;
+	cursor: pointer;
+	color: #808285;
+}
+div.graph span {
+	margin-right: 5px;
+	margin-left: 5px;
+	display: inline-block;
+}
+.diseaseSelected {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #2196f3;
+	margin: 0px 10px 0px 10px;
+	color: #2196f3 !important;
+}
+.diseaseSelected::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: calc(50% - 6px);
+	border-width: 0 6px 6px;
+	border-style: solid;
+	border-color: #2196f3 transparent !important;
+	display: block;
+	width: 0;
+	z-index: 20;
+}
+.diseaseSelected-two {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #2196f3;
+	margin: 0px 0px 0px 0px;
+	color: #2196f3;
+}
+.vs {
+	position: absolute;
+	top: 410px;
+	right: -40px;
+	width: 75px;
+	height: 75px;
+	border: 1px solid #414042;
+	border-radius: 50%;
+	background-color: #192229;
+	z-index: 25;
+}
+.vs > span {
+	color: #58595B;
+	padding-top: 27px;
+}
+svg.board-one,
+svg.board-two,
+svg.board-three,
+svg.board-four {
+	position: absolute;
+	left: 0;
+	/*top: 200px;*/
+	height: 100%;
+	width: 100%;
+}
+.disease-nav {
+	position: relative;
+	padding-bottom: 10px;
+	color: #808285;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.disease-nav:hover {
+	border-bottom: 2px solid;
+}
+.disease-nav:hover::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: calc(50% - 6px);
+	border-width: 0 6px 6px;
+	border-style: solid;
+	border-color: #808285 transparent;
+	display: block;
+	width: 0;
+	z-index: 20;
+}
+.left-graph {
+	position: absolute;
+	background-color: #192229;
+	margin: 0px -4px 0px 0px;
+	height: 750px;
+	z-index: 1000;
+}
+.right-graph {
+	background-color: #20292f;
+	height: 750px;
+	z-index: 100;
+}
+.left-graph .disease-items {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.right-graph .disease-items span {
+	margin-bottom: 20px;
+	padding-bottom: 9px;
+	color: #2196f3;
+	position: relative;
+}
+.circle {
+	z-index: 1000;
+	background-color: #2196f3;     
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 50%;
+}
+a.circle {
+	text-decoration: none;
+	font-size: 10px;
+}
+.source {
+	text-align: left;
+	padding-left: 20px;
+	color: #808285;
+	margin-bottom: 3em;
+}
+.vac-source.source {
+	position: absolute;
+	bottom: 0;
+}
+.source .source-notes p {
+	line-height: 1.5em;
+	display: block;
+}
+.source h4,
+.source p {
+	display: inline-block;
+	color: #808285;
+	text-transform: none !important;
+	font-family: Cassia-regular;
+	font-size: 10px;
+}
+.source p {
+	margin-top: 1em;
+}
+/*.source-two {
+	text-align: left;
+	padding-left: 20px;
+	color: #808285;
+	position: absolute;
+	width: 100%;
+}
+.source-two h4 {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.source-two > p {
+	margin-bottom: 10px;
+}
+*/
+
+.complications {
+	position: absolute;
+	top: 0;
+	right: 30px;
+	font-family: Cassia-regular;
+	font-size: 10px;
+}
+.complications p {
+	color: #808285;
+}
+.complications-image {
+	margin-top: 0px; 
+	margin-bottom: -5px;
+	margin-right: 5px; 
+	display: inline-block;
+	width: 18px;
+}
+.complications span:nth-of-type(1) {
+	color: #E44046;
+	margin: 9px 7px;
+}
+.complications span:nth-of-type(2) {
+	color: #d98c51;
+	margin: 7px 7px;
+}
+.complications span:nth-of-type(3) {
+	color: #DFC83F;
+	margin: 7px 7px;
+}
+.mill {
+	margin: 0 0 0 0;
+	display: inline-block;
+	padding-left: 2px;
+	color: #808285;
+}
+svg.board-two .y-axis,
+svg.board-four .y-axis {
+	-webkit-transform: translate(0);
+	   -moz-transform: translate(0);
+	    -ms-transform: translate(0);
+	     -o-transform: translate(0);
+	        transform: translate(0);
+}
+.y-axis path, 
+.y-axis line {
+	fill: none;
+	stroke: #808285;
+	stroke-dasharray: 2,2;
+	shape-rendering: crispEdges;
+	z-index: 0; 
+	opacity: 0.2;
+}
+.y-axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+  fill: #808285;
+}
+
+.grid-line {
+	opacity: 0.2;
+	z-index: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.man-icon {
+	background: url('../images/politics_of_vaccines/man.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 16px;
+	width: 11px;
+	vertical-align: middle;
+}
+.symptom {
+	color: #c5bdbd;
+	margin: 0px 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 11px;
+	font-family: Cassia-regular;
+	line-height: .9rem;
+}
+.value {
+	padding-bottom: 5px;
+	margin: 0px 0px;
+	color: #585959;
+	font-family: arial;
+	font-size: 11px;
+}
+.value  {
+	width: 10px;
+	height: 10px;
+}
+.value-two {
+	margin: 0px 0px;
+	border-bottom: 1px solid #58595B;
+	display: inline;
+	width: 100%;
+	margin-top: 12px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	font-size: 18px;
+}
+
+.triangle-border {
+  position:relative;
+  padding: 5px 5px 10px 5px;
+  padding-right: 10px;
+  margin:1em 0 3em;
+  border: 1px solid #6f6c71;
+  width: 100px;
+  height: auto;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:4px;
+  text-align: left;
+}
+
+.left-graph .triangle-border:after {
+	border-color: #192229 transparent !important;
+}
+.triangle-border:before {
+	content: "";
+	position: absolute;
+	bottom: -18px;
+	left: calc(50% - 15px);
+	border-width: 18px 15px 0;
+	border-style: solid;
+	border-color: #58595B transparent;
+	display: block;
+	width: 0;
+	z-index: 20;
+}
+.triangle-border:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 15px);
+    border-width: 18px 15px 0;
+    border-style: solid;
+    border-color: #20292F transparent;
+    display: block;
+    width: 0;
+    z-index: 20;
+}
+.graph-two-section {
+	background-color: #192229;
+}
+#myCir * {
+  fill-opacity: 0;
+  transition: fill-opacity 1s;
+}
+
+#myCir.finished * {
+  fill-opacity: 1;
+}
+/*
+==============================================
+Vacine vs. Antibody Section
+==============================================
+*/
+.vac-anti-container {
+	background: rgb(188,190,192);
+	text-align: center;
+	position: relative;
+	z-index: 100;
+}
+.vac-anti-container * {
+	max-width: 1200px;
+}
+.vac-anti-container .title-block h1,
+.vac-anti-container .title-block p {
+	color: #192229;
+	line-height: 1.2em;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.vac-anti-section {
+	margin-left: auto;
+	margin-right: auto;
+}
+.vac-anti-section .info-container {
+	display: flex;
+	padding-bottom: 7.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info-container .info-container-one,
+.info-container .info-container-two {
+	flex: 1;
+}
+.info-container .info-cell {
+	padding: 1em;
+}
+.info-container .image-container {
+	position: relative;
+	overflow: hidden;
+	width: 313px;
+	height: 313px;
+	background: #3F8CE9;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 35px;
+	border-radius: 290px;
+	border: 11px solid rgb(225,225,225);
+	transform: scale(.8);
+	-webkit-transform: scale(.8);
+	-ms-transform: scale(.8);
+	-o-transform: scale(.8);
+	-moz-transform: scale(.8);
+}
+.vac-svg {
+	position: absolute;
+	width: 230px;
+	left: 67px;
+	bottom: 0;
+}
+.syringe-angled-transform {
+	transform: translate(150px,150px);
+	-webkit-transform: translate(150px,150px);
+	-moz-transform: translate(150px,150px);
+	-o-transform: translate(150px,150px);
+	-ms-transform: translate(150px,150px);
+}
+.vac-anti-section .info-cell .arrow {
+	background: url('../images/politics_of_vaccines/arrow.png');
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	margin-right: .5em;
+	background-size: cover;
+}
+.vac-anti-section .info-cell p {
+	display: inline-block;
+	vertical-align: middle;
+	width: 280px;
+	text-align: left;
+	font-family: Proxima-regular;
+	color: #192229;
+}
+.vac-anti-container .source a,
+.ingredients-side-effects-container .source a {
+	color: #192229;
+}
+
+@media (max-width:800px) {
+	.vac-anti-container .image-container {
+		transform: scale(.75);
+		-webkit-transform: scale(.75);
+		-moz-transform: scale(.75);
+		-o-transform: scale(.75);
+		-ms-transform: scale(.75);
+		margin-bottom: -20px;
+	}
+}
+
+
+@-webkit-keyframes slideInVaccines {
+  0% { opacity: 0; -webkit-transform: translate(100%,100%); transform: translate(100%,100%); }
+  100% { opacity: 1; -webkit-transform: translate(0,0); transform: translate(0,0); }
+}
+@-moz-keyframes slideInVaccines {
+  0% { opacity: 0; -moz-transform: translate(100%,100%); transform: translate(100%,100%); }
+  100% { opacity: 1; -moz-transform: translate(0,0); transform: translate(0,0); }
+}
+@-o-keyframes slideInVaccines {
+  0% { opacity: 0; -o-transform: translate(100%,100%); transform: translate(100%,100%); }
+  100% { opacity: 1; -o-transform: translate(0,0); transform: translate(0,0); }
+}
+@keyframes slideInVaccines {
+  0% { opacity: 0; -webkit-transform: translate(100%,100%); -ms-transform: translate(100%,100%); -o-transform: translate(100%,100%); transform: translate(100%,100%); }
+  100% { opacity: 1; -webkit-transform: translate(0,0); -ms-transform: translate(0,0); -o-transform: translate(0,0); transform: translate(0,0); }
+}
+.slideInVaccines {
+	opacity: 0;
+	animation-name: slideInVaccines;
+	-webkit-animation-name: slideInVaccines;
+	-moz-animation-name: slideInVaccines;
+	-o-animation-name: slideInVaccines;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+
+/*
+==============================================
+Ingredients Side Effects Section
+==============================================
+*/
+.ingredients-side-effects-container {
+	background-color: #192229;
+	position: relative;
+	z-index: 100;
+}
+.ingredients-side-effects-container * {
+	max-width: 1200px;
+}
+.ingredients-side-effects-container .title-block h1,
+.ingredients-side-effects-container .title-block span {
+	color: #FFFBE9;
+	margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: block;
+}
+.ingredients-side-effects-section {
+	text-align: center;
+	/*width: 1000px;*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10em;
+}
+.ingredient-info {
+	padding-top: 2rem;
+	border-top: 2px dotted #848383;
+	margin-bottom: 6rem;
+	display: flex;
+}
+.ingredient-item {
+	text-transform: uppercase;
+	width: 7rem;
+	height: 100%;
+	margin: 0 1rem;
+	padding-bottom: 1rem;
+	flex: 1;
+	border-bottom: 4px solid transparent;
+	position: relative;
+	cursor: pointer;
+	font-family: Proxima-regular;
+}
+.ingredient-item:hover:not(.selected) {
+	border-bottom: 4px solid gray;
+}
+.ingredient-item:hover:not(.selected)::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 43%;
+	border-width: 0 9px 9px;
+	border-style: solid;
+	border-color: #808285 transparent;
+	display: block;
+	width: 0;
+	z-index: 20;
+}
+.selected {
+	color: #3F8CE9;
+	border-bottom: 4px solid #3F8CE9;
+}
+.selected::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 43%;
+	border-width: 0 9px 9px;
+	border-style: solid;
+	border-color: #3F8CE9 transparent;
+	display: block;
+	width: 0;
+	z-index: 20;
+}
+.ingredients-side-effects-section .syringe-container {
+	height: 15em;
+	width: 68em;
+	position: relative;
+	padding-bottom: 7rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ingredients-side-effects-section .syringe-info {
+	width: 53%;
+	position: absolute;
+	top: 4.4rem;
+	z-index: 100;
+	left: 8rem;
+	text-align: left;
+	opacity: 0;
+}
+.syringe-info a {
+	text-decoration: none;
+}
+.ingredient-selected {
+	opacity: 1 !important;
+}
+.syringe-title {
+	font-family: Dinpro-bold;
+	font-size: 16px;
+	color: #192229;
+}
+.syringe-p {
+	font-family: Proxima-regular;
+	color: #192229;
+}
+.ingredients-side-effects-container .title-block {
+
+}
+.ingredients-side-effects-section .lt,
+.ingredients-side-effects-section .gt {
+	display: none;
+}
+.ingredients-side-effects-section .slider-targets {
+	display: flex;
+	width: 100%;
+}
+@media (max-width: 700px) {
+	.vac-anti-section .info-container,
+	.vac-anti-section .info-cell {
+		flex-direction: column;
+		width: 375px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.vac-anti-section .info-container {
+		padding-bottom: 6em;
+	}
+	.vac-anti-section .info-cell p {
+		width: 82%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ingredients-side-effects-container {
+		height: 82em;
+	}
+	.ingredients-side-effects-section .title-block h1 {
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.vac-anti-section .info-container-one {
+		margin-bottom: 3em;
+	}
+	.ingredients-side-effects-container #big-syringe {
+		transform: rotate(-90deg) scale(.6);
+		-webkit-transform: rotate(-90deg) scale(.6);
+		-moz-transform: rotate(-90deg) scale(.6);
+		-o-transform: rotate(-90deg) scale(.6);
+		-ms-transform: rotate(-90deg) scale(.6);
+		transform-origin: 235px 379px 0;
+		-webkit-transform-origin: 235px 379px 0;
+		-moz-transform-origin: 235px 379px 0;
+		-o-transform-origin: 235px 379px 0;
+		-ms-transform-origin: 235px 379px 0;
+		left: 1rem;
+		position: absolute;
+	}
+	.ingredients-side-effects-container .title-p-container {
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+	}
+	.syringe-info .syringe-title,
+	.syringe-info .syringe-p {
+		color: #FFFBE9;;
+		line-height: 1.5;
+	}
+	.syringe-info .syringe-title {
+		font-size: 36px;
+	}
+	.ingredients-side-effects-section .syringe-info {
+		top: 10rem;
+		width: 45%;
+		left: 9rem;
+	}
+	.ingredients-side-effects-section .ingredient-selection:not(.selected) {
+		display: none;
+	}
+	.ingredients-side-effects-section .ingredient-info {
+		padding: 0;
+		position: relative;
+		border-top: none;
+		line-height: 18px;
+		background: #2196f3;
+	}
+	.ingredients-side-effects-section .lt,
+	.ingredients-side-effects-section .gt {
+		position: absolute;
+		font-size: 2rem;
+		width: 31px;
+		height: 31px;
+		line-height: 30px;
+		text-align: center;
+		font-weight: bold;
+		display: block;
+		z-index: 10;
+		top: 0;
+		cursor: pointer;
+	}
+	.ingredients-side-effects-section .lt {
+		left: 25px;
+		background: url('../images/politics_of_vaccines/selector_circle_left.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.ingredients-side-effects-section .gt {
+		right: 25px;
+		background: url('../images/politics_of_vaccines/selector_circle_right.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		top: -1px;
+	}
+	.ingredients-side-effects-section .ingredient-item,
+	.ingredients-side-effects-section .ingredient-item .selected {
+		flex: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		border: none;
+		color: #FFFBE9;
+		font-size: 1.2rem;
+		top: 1px;
+	}
+	.ingredients-side-effects-section .ingredient-item::before, 
+	.ingredients-side-effects-section .selected {
+		border: none;
+		padding: .4rem;
+	}
+	.ingredients-side-effects-section .slider-targets {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ingredients-side-effects-section .slider-buttons {
+		position: absolute;
+		width: 100%;
+	}
+
+}
+@media (max-width: 580px) {
+	.ingredients-side-effects-section .syringe-info {
+		width: 24%;
+	}
+}
+@media (max-width: 500px) {
+	.ingredients-side-effects-section .syringe-info {
+		width: 20%;
+	}
+}
+@media (max-width: 400px) {
+	.syringe-info .syringe-title {
+		font-size: 1.5rem;
+	}
+}
+
+
+
+@-webkit-keyframes fill {
+  0% 	{ x: 605px; width: 0;}
+  100% { x: 0; width: 605px;}
+}
+@-moz-keyframes fill {
+  0% 	{ x: 605px; width: 0;}
+  100% { x: 0; width: 605px;}
+}
+@-o-keyframes fill {
+  0% 	{ x: 605px; width: 0;}
+  100% { x: 0; width: 605px;}
+}
+@keyframes fill {
+  0% 	{ x: 605px; width: 0;}
+  100% { x: 0; width: 605px;}
+}
+.fill {
+  	animation-name: fill;
+	-webkit-animation-name: fill;
+	-moz-animation-name: fill;
+	-o-animation-name: fill;
+}
+
+
+
+/*
+==============================================
+Transparency and Mistrust Section
+==============================================
+*/
+.mistrust-container {
+	background-color: rgb(241,242,242);
+	text-align: center;
+	position: relative;
+	z-index: 100;
+	padding-bottom: 2rem;
+}
+.mistrust-section .title-block p {
+	color: #192229;
+}
+.mistrust-info-container {
+	display: flex;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.mistrust-image {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.mistrust-image svg {
+	width: 150px;
+}
+.mistrust-class {
+	color: #3F8CE9;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: .5em;
+	font-family: Dinpro-bold;
+}
+.mistrust-info {
+	flex: 1;
+	text-align: left;
+}
+.mistrust-info p {
+	padding: 0rem 2rem 2rem 2rem;
+}
+.mistrust-info .source {
+	position: relative;
+	padding-left: 1em;
+	bottom: 0;
+}
+.mistrust-info-container .source a {
+	color: #F1F2F2;
+}
+.mistrust-data {
+	font-family: Proxima-regular;
+	color: #5A5A5A;
+}
+
+
+@-webkit-keyframes slideInDown {
+  0% 	{ opacity: 0; -webkit-transform: translateY(-150%); transform: translateY(-150%); }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1;}
+}
+@-moz-keyframes slideInDown {
+  0% 	{ opacity: 0; -moz-transform: translateY(-150%); transform: translateY(-150%); }
+  100% { -moz-transform: translateY(0); transform: translateY(0); opacity: 1;}
+}
+@-o-keyframes slideInDown {
+  0% 	{ opacity: 0; -o-transform: translateY(-150%); transform: translateY(-150%); }
+  100% { -o-transform: translateY(0); transform: translateY(0); opacity: 1;}
+}
+@keyframes slideInDown {
+  0% 	{ opacity: 0; -webkit-transform: translateY(-150%); -ms-transform: translateY(-150%);  -o-transform: translateY(-150%); transform: translateY(-150%); }
+  100% { -webkit-transform: translateY(0); -ms-transform: translateY(0);  -o-transform: translateY(0); transform: translateY(0); opacity: 1;}
+}
+.slideInDown {
+	opacity: 0;
+  	animation-name: slideInDown;
+	-webkit-animation-name: slideInDown;
+	-moz-animation-name: slideInDown;
+	-o-animation-name: slideInDown;
+  	animation-fill-mode: forwards;
+  	-webkit-animation-fill-mode: forwards;
+  	-moz-animation-fill-mode: forwards;
+  	-o-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes slideInUp {
+  0% 	{ opacity: 0; -webkit-transform: translateY(150%); transform: translateY(150%); }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1;}
+}
+@-moz-keyframes slideInUp {
+  0% 	{ opacity: 0; -moz-transform: translateY(150%); transform: translateY(150%); }
+  100% { -moz-transform: translateY(0); transform: translateY(0); opacity: 1;}
+}
+@-o-keyframes slideInUp {
+  0% 	{ opacity: 0; -o-transform: translateY(150%); transform: translateY(150%); }
+  100% { -o-transform: translateY(0); transform: translateY(0); opacity: 1;}
+}
+@keyframes slideInUp {
+  0% 	{ opacity: 0; -webkit-transform: translateY(150%); -ms-transform: translateY(150%); -o-transform: translateY(150%); transform: translateY(150%); }
+  100% { -webkit-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); opacity: 1;}
+}
+.slideInUp {
+	opacity: 0;
+	animation-name: slideInUp;
+	-webkit-animation-name: slideInUp;
+	-moz-animation-name: slideInUp;
+	-o-animation-name: slideInUp;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes slideInLeft {
+  0% { opacity: 0; -webkit-transform: translateX(-400px); transform: translateX(-400px); }
+  100% { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1;}
+}
+@-moz-keyframes slideInLeft {
+  0% { opacity: 0; -moz-transform: translateX(-400px); transform: translateX(-400px); }
+  100% { -moz-transform: translateX(0); transform: translateX(0); opacity: 1;}
+}
+@-o-keyframes slideInLeft {
+  0% { opacity: 0; -o-transform: translateX(-400px); transform: translateX(-400px); }
+  100% { -o-transform: translateX(0); transform: translateX(0); opacity: 1;}
+}
+@keyframes slideInLeft {
+  0% { opacity: 0; -webkit-transform: translateX(-400px); -ms-transform: translateX(-400px); -o-transform: translateX(-400px); transform: translateX(-400px); }
+  100% { -webkit-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); opacity: 1;}
+}
+.slideInLeft {
+	opacity: 0;
+	animation-name: slideInLeft;
+	-webkit-animation-name: slideInLeft;
+	-moz-animation-name: slideInLeft;
+	-o-animation-name: slideInLeft;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes slideInRight {
+  0% { opacity: 0; -webkit-transform: translateX(400px); transform: translateX(400px); }
+  100% { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1;}
+}
+@-moz-keyframes slideInRight {
+  0% { opacity: 0; -moz-transform: translateX(400px); transform: translateX(400px); }
+  100% { -moz-transform: translateX(0); transform: translateX(0); opacity: 1;}
+}
+@-o-keyframes slideInRight {
+  0% { opacity: 0; -o-transform: translateX(400px); transform: translateX(400px); }
+  100% { -o-transform: translateX(0); transform: translateX(0); opacity: 1;}
+}
+@keyframes slideInRight {
+  0% { opacity: 0; -webkit-transform: translateX(400px); -ms-transform: translateX(400px); -o-transform: translateX(400px);  transform: translateX(400px); }
+  100% { -webkit-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); opacity: 1;}
+}
+.slideInRight {
+	opacity: 0;
+	animation-name: slideInRight;
+	-webkit-animation-name: slideInRight;
+	-moz-animation-name: slideInRight;
+	-o-animation-name: slideInRight;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes rotateIn {
+  0% {/*-webkit-transform-origin: right center; transform-origin: right center; */ -webkit-transform: rotateY(90deg); transform: rotateY(90deg); opacity: 0; }
+  100% { -webkit-transform: rotateY(0); transform: rotateY(0); opacity: 1;}
+}
+@-moz-keyframes rotateIn {
+  0% {/*-moz-transform-origin: right center; transform-origin: right center; */ -moz-transform: rotateY(90deg); transform: rotateY(90deg); opacity: 0; }
+  100% { -moz-transform: rotateY(0); transform: rotateY(0); opacity: 1;}
+}
+@-o-keyframes rotateIn {
+  0% {/*-o-transform-origin: right center; transform-origin: right center; */ -o-transform: rotateY(90deg); transform: rotateY(90deg); opacity: 0; }
+  100% { -o-transform: rotateY(0); transform: rotateY(0); opacity: 1;}
+}
+@keyframes rotateIn {
+  0% { /*-webkit-transform-origin: right center; -ms-transform-origin: right center; transform-origin: right center;*/ -webkit-transform: rotateY(90deg); -ms-transform: rotateY(90deg); -o-transform: rotateY(90deg); transform: rotateY(90deg); opacity: 0; }
+  100% { -webkit-transform: rotateY(0); -ms-transform: rotateY(0); -o-transform: rotateY(0); transform: rotateY(0); opacity: 1;}
+}
+.rotateIn {
+	opacity: 0;
+	animation-name: rotateIn;
+	-webkit-animation-name: rotateIn;
+	-moz-animation-name: rotateIn;
+	-o-animation-name: rotateIn;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+
+
+
+@-webkit-keyframes shake {
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+}
+@-moz-keyframes shake {
+  0%, 100% { -moz-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -moz-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -moz-transform: translateX(10px); transform: translateX(10px); }
+}
+@-o-keyframes shake {
+  0%, 100% { -o-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -o-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -o-transform: translateX(10px); transform: translateX(10px); }
+}
+@keyframes shake {
+  0%, 100% { -webkit-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); -ms-transform: translateX(-10px); -o-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); -ms-transform: translateX(10px); -o-transform: translateX(10px); transform: translateX(10px); }
+}
+.shake {
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  -o-animation-name: shake;
+  animation-name: shake;
+}
+
+
+@media (max-width: 800px) {
+	.mistrust-container {
+		padding-bottom: 0rem;
+	}
+	.mistrust-section .title-p {
+		width: 85%;
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mistrust-section .title {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mistrust-section .mistrust-info-container {
+		flex-direction: column;
+		max-width: 500px;
+	}
+	.mistrust-info .source {
+		padding-bottom: 2em;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		border-bottom: 2px solid #E1E1E1;
+		padding-left: 0 !important;
+	}
+	.mistrust-info-container :nth-child(2n) {
+	    border-bottom: none !important;
+	}
+}
+
+/*
+==============================================
+Media Queries
+==============================================
+*/
+@media (min-width: 981px) and (max-width: 1280px) {
+	.triangle-border {
+		width: 95px;
+	}
+	.triangle-border * {
+		font-size: smaller;
+	}
+}
+@media (min-width: 768px) and (max-width: 980px) {
+	.triangle-border {
+		width: 80px;
+	}
+}
+@media (min-width: 350px) and (max-width: 767px) {
+	.triangle-border {
+		width: 70px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
